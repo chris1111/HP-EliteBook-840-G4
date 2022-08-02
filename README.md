@@ -1,6 +1,9 @@
 # HP-EliteBook-840-G4
 OpenCore / macOS Ventura
 
+## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
+
+
 ![HP EliteBook 840 G4](https://user-images.githubusercontent.com/6248794/180880895-2980622f-2421-4e36-a178-1fdedc10b38a.png)
 
 
