@@ -10,6 +10,7 @@ OpenCore / macOS Ventura
 ### Show small Video Touch screen ⬇︎
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/180882015-aa6209bd-a10d-4a1e-85cf-d9729b8e0efc.png)](https://youtu.be/jwMZei4FWgo)
 
+### You can create an Install SSD or an install USB key
 ![Screenshot 2022-08-01 at 7 58 24 PM](https://user-images.githubusercontent.com/6248794/182264336-393bf0a0-5cde-498e-8bbc-e6f5cf76a1f0.png)
 
 
