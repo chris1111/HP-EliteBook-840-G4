@@ -221,13 +221,14 @@ make
 - Ethernet
 - Audio in internal speaker and headphone
 - Sleep and Wake
-- AirPort
-- Bluetooth and AirDrop
+- WIFI AirPort
+- Bluetooth and Wifi
 - Battery Status
 - CPU Power Management
 - Brightness Control Hotkeys
 - Dimmable Keyboard Backlight
 - Multi-Gestures Trackpad
+- Touch Screen
 - Integrated Camera
 
 
