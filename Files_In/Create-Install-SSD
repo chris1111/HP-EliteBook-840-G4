@@ -102,7 +102,7 @@ Sleep 2
 
 
 # Confirmation
-response=$(osascript -e 'tell app "System Events" to display dialog "Please confirm your choice and click OK button\n\nSource: \n'"$imagepath"' \n\nDestination: \n'"$dest"' \n\n\nThe volume will be used to Install macOS" buttons {"Cancel", "OK"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'" ')
+response=$(osascript -e 'tell app "System Events" to display dialog "Please confirm your choice then press the OK button\n\nSource: \n'"$imagepath"' \n\nDestination: \n'"$usbdiskpath"' \n\n\nThe volume will be use for the Installer macOS" buttons {"Cancel", "OK"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'" ')
 answer=$(echo $response | grep "OK")
 
 # Cancel is user does not select OK
