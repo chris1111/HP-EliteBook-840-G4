@@ -241,5 +241,6 @@ make
 - [alexandred](https://github.com/alexandred) VoodooI2C
 - [andreszerocross](https://github.com/andreszerocross/VoodooRMI) VoodooRMI
 
-Looking for ➦ [HP-EliteBook-840-G3](https://github.com/chris1111/Installassistant-Downloader/files/10972883/HP-EliteBook-840-G3.zip) 
+Looking for ➦ [HP-EliteBook-840-G3](https://github.com/chris1111/HP-EliteBook-840-G4/files/11062090/HP-EliteBook-840-G3.zip)
+ 
  
