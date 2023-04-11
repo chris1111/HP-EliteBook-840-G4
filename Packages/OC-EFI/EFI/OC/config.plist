@@ -1553,7 +1553,7 @@
 				<key>SystemAudioVolume</key>
 				<data>AQ==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1</string>
+				<string>-v keepsyms=1 -rtsxnopm</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>prev-lang:kbd</key>
