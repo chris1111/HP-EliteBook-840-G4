@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <installer-script minSpecVersion="1.000000" authoringTool="com.opencorePackage.Productbuild" authoringToolVersion="1.0" authoringToolBuild="100000">
     <title>OpenCore</title>
-    <options customize="never" allow-external-scripts="no"/>
+    <options customize="never" allow-external-scripts="true"/>
     <domains enable_anywhere="true" enable_localSystem="true"/>
     <background file="background.png" alignment="center" scaling="tofit"/>
     <background-darkAqua file="background" alignment="center" scaling="tofit"/>
