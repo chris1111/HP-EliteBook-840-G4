@@ -19,7 +19,7 @@ echo "-------------------------------------"
 response=$(osascript -e 'tell app "System Events" to display dialog "
 Format your SSD or HD drive with Disk Utility.
 Format your SSD into a single partition
-macOS Extended Logs/GUID Partition
+macOS Extended Journaled/GUID Partition
 Give it whatever name you want
 After formatting, you must exit Disk Utility to continue installation\nCancel = EXIT" buttons {"Cancel", "Disk Utility"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
