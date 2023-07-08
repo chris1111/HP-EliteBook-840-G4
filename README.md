@@ -1,6 +1,6 @@
 # HP-EliteBook-840-G4
 Latest Update 08 July 2023
-- OC REL-095-2023-07-08
+- OC REL-094-2023-07-08
 
 OpenCore / macOS Sonoma 14 / macOS Ventura 13
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
