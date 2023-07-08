@@ -18,7 +18,7 @@
 				<key>Comment</key>
 				<string>Power Management</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-PM.aml</string>
 			</dict>
@@ -26,7 +26,7 @@
 				<key>Comment</key>
 				<string>SSDT-PLUG.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-PLUG.aml</string>
 			</dict>
