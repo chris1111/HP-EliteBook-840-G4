@@ -49,7 +49,7 @@ make
 - 24GB DDR4 2133MHz RAM
 - 14in Full HD LED Display
 - SMBus Synaptics TouchPad
-- BCM94360NG Wi-Fi and Bluetooth Card (Upgraded for Ventura 13) [BCM94360NG](https://www.aliexpress.com/item/32464748097.html?spm=a2g0o.order_list.order_list_main.11.16611802TVtCh4)
+- BCM94360NG Wi-Fi and Bluetooth Card (Upgraded for Ventura 13) [BCM94360NG](https://www.aliexpress.com/item/32464748097.html?spm=a2g0o.order_list.order_list_main.11.16611802TVtCh4) No Broadcom card working for now in Sonoma 14
 - 2 USB 3.0 Ports, 1 USB Type-C Port
 - Display Port
 - SD Card Reader
