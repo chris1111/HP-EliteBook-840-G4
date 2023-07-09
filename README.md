@@ -28,6 +28,18 @@ cd $HOME/HP-EliteBook-840-G4
 make
 ```
 
+### Install Instructions: ⬇︎ using wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
+#### Clone the repository
+```bash
+git clone --branch wifi-sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git
+cd $HOME/HP-EliteBook-840-G4
+```
+
+#### Build
+```bash
+make
+```
+
 
 ##### Laptop Specifications:
 - Intel Core i7-7600U Quad Core CPU
