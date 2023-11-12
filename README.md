@@ -1,6 +1,6 @@
 # HP-EliteBook-840-G4
-Latest Update 08 July 2023
-- OC REL-094-2023-07-08
+Latest Update 12 Nov 2023
+- OC REL-097-2023-11-09
 
 OpenCore / macOS Sonoma 14 / macOS Ventura 13
 
