@@ -74,8 +74,6 @@ cp -rp ./Files_In/description.rtfd "$APP_NAME"/Contents/Resources
 # Copy Installer
 cp -rp ./OpenCore.pkg "$APP_NAME"/Contents/Resources/Scripts
 
-# Copy Command
-cp -rp ./Files_In/Create-Install-SSD "$APP_NAME"/Contents/Resources/Scripts
 
 Sleep 2
 
