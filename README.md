@@ -30,6 +30,18 @@ make
 ```
 
 
+### Install Instructions: ⬇︎ using Broadcom wifi-sonoma branch for User with an BCM wifi card compatible
+#### Clone the repository
+```bash
+git clone --branch Broadcom-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git
+cd $HOME/HP-EliteBook-840-G4
+```
+
+#### Build
+```bash
+make
+```
+
 ### Install Instructions: ⬇︎ using Intel wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
 #### Clone the repository
 ```bash
@@ -41,7 +53,6 @@ cd $HOME/HP-EliteBook-840-G4
 ```bash
 make
 ```
-
 
 ##### Laptop Specifications:
 - Intel Core i7-7600U Quad Core CPU
