@@ -91,7 +91,7 @@ Sleep 1
 rm -rf "$APP_NAME"
 rm -rf $HOME/Desktop/"$APP_NAME"
 Sleep 1
-unzip "$APP_NAME".zip -d $HOME/Desktop
+unzip "$APP_NAME".zip -d $HOME/Downloads
 Sleep 1
 
 # Activate App
