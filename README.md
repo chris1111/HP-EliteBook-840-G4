@@ -17,30 +17,7 @@ OpenCore / macOS Sonoma 14 / macOS Ventura 13
 ![Screenshot 2022-08-01 at 7 58 24 PM](https://user-images.githubusercontent.com/6248794/182264336-393bf0a0-5cde-498e-8bbc-e6f5cf76a1f0.png)
 
 
-### Install Instructions: ⬇︎
-#### Clone the repository
-```bash
-git clone https://github.com/chris1111/HP-EliteBook-840-G4.git
-cd $HOME/HP-EliteBook-840-G4
-```
-
-#### Build
-```bash
-make
-```
-
-
-### Install Instructions: ⬇︎ using wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
-#### Clone the repository
-```bash
-git clone --branch wifi-sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git
-cd $HOME/HP-EliteBook-840-G4
-```
-
-#### Build
-```bash
-make
-```
+### Install Instructions: ➡︎ [Build Project](https://github.com/chris1111/HP-EliteBook-840-G4/wiki)
 
 
 ##### Laptop Specifications:
