@@ -17,7 +17,7 @@ OpenCore / macOS Sonoma 14 / macOS Ventura 13
 ![Screenshot 2022-08-01 at 7 58 24 PM](https://user-images.githubusercontent.com/6248794/182264336-393bf0a0-5cde-498e-8bbc-e6f5cf76a1f0.png)
 
 
-### Install Instructions: ⬇︎
+### Install Instructions: ⬇︎ For Ventura using BCM94360NG native Wifi card
 #### Clone the repository
 ```bash
 git clone https://github.com/chris1111/HP-EliteBook-840-G4.git
