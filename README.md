@@ -30,10 +30,10 @@ make
 ```
 
 
-### Install Instructions: ⬇︎ using wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
+### Install Instructions: ⬇︎ using Intel wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
 #### Clone the repository
 ```bash
-git clone --branch wifi-sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git
+git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git
 cd $HOME/HP-EliteBook-840-G4
 ```
 
