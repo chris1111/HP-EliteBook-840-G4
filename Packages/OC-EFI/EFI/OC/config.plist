@@ -64,14 +64,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-BATT.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-BATT.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-GPRW.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -117,6 +109,14 @@
 				<true/>
 				<key>Path</key>
 				<string>FixShutdown-USB-SSDT.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BATT.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -1002,6 +1002,96 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>AirportItlwm.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AirportItlwmV.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
+				<key>MaxKernel</key>
+				<string>22.99.99</string>
+				<key>MinKernel</key>
+				<string>22.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IntelBTPatcher.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IntelBTPatcher</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IntelBluetoothFirmware.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IntelBluetoothFirmware</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>IntelMausi.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -1412,7 +1502,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>chris1111\Flavours-Square</string>
+			<string>chris1111\Flavours-FadeIcon</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -1597,7 +1687,7 @@
 				<key>SystemAudioVolume</key>
 				<data>AQ==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 -rtsxnopm -v</string>
+				<string>-noht40 keepsyms=1 -rtsxnopm -lilubetaall -v</string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1605,6 +1695,10 @@
 en-US:0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>bluetoothExternalDongleFailed</key>
+				<data>AA==</data>
+				<key>bluetoothinternalControllerInfo</key>
+				<data>AAAAAAAAAAAAAAAAAAA=</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1668,11 +1762,11 @@ en-US:0</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02845100GUJH4RUE</string>
+			<string>C02813200GUJH4RA8</string>
 			<key>ProcessorType</key>
 			<integer>1793</integer>
 			<key>ROM</key>
-			<data>8jY7ykhh</data>
+			<data>ypBAxhMN</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1680,9 +1774,9 @@ en-US:0</string>
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XNNY4JHCC</string>
+			<string>C02WH0UGJHCC</string>
 			<key>SystemUUID</key>
-			<string>A0CC5718-2E6B-4064-881D-2EA02C8A9A4D</string>
+			<string>B4FFE689-4D05-4014-B25C-4A3E91E4294B</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1853,18 +1947,6 @@ en-US:0</string>
 				<false/>
 				<key>Path</key>
 				<string>OpenNtfsDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
-				<key>Path</key>
-				<string>Ext4Dxe.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
