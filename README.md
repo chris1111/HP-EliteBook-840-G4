@@ -55,6 +55,18 @@ cd $HOME/HP-EliteBook-840-G4
 make
 ```
 
+### Install Instructions: ⬇︎ For Sequoia Beta (WIFI will not work for now)
+#### Clone the repository
+```bash
+git clone --branch sequoia-beta https://github.com/chris1111/HP-EliteBook-840-G4.git
+cd $HOME/HP-EliteBook-840-G4
+```
+
+#### Build
+```bash
+make
+```
+
 ##### Laptop Specifications:
 - Intel Core i7-7600U Quad Core CPU
 - Intel HD 620 Graphics
