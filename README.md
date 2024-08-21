@@ -55,10 +55,11 @@ cd $HOME/HP-EliteBook-840-G4
 make
 ```
 
-### Install Instructions: ⬇︎ For Sequoia Beta (WIFI will not work for now)
+### Install Instructions: ⬇︎ For Sequoia Beta (Wifi Bluetooth Broadcom will work)
+- with OCLP Github Artifacts Link: https://github.com/dortania/OpenCore-Legacy-Patcher/actions/runs/10479466899/artifacts/1834680165)
 #### Clone the repository
 ```bash
-git clone --branch sequoia-beta https://github.com/chris1111/HP-EliteBook-840-G4.git
+git clone --branch Broadcom-Wifi-Sequoia-Beta https://github.com/chris1111/HP-EliteBook-840-G4.git
 cd $HOME/HP-EliteBook-840-G4
 ```
 
