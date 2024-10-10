@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>22F82</string>
+	<string>24A348</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Controller</string>
 	<key>CFBundleGetInfoString</key>
@@ -29,19 +29,19 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string></string>
+	<string>24A330</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>13.3</string>
+	<string>15.0</string>
 	<key>DTSDKBuild</key>
-	<string>22E245</string>
+	<string>24A330</string>
 	<key>DTSDKName</key>
-	<string>macosx13.3</string>
+	<string>macosx15.0</string>
 	<key>DTXcode</key>
-	<string>1431</string>
+	<string>1600</string>
 	<key>DTXcodeBuild</key>
-	<string>14E300c</string>
+	<string>16A242</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ACPI PS/2 Nub</key>
@@ -137,7 +137,7 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.11</string>
+	<string>10.10</string>
 	<key>OSBundleCompatibleVersion</key>
 	<string>2.3.6</string>
 	<key>OSBundleLibraries</key>

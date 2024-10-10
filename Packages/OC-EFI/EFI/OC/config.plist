@@ -1779,9 +1779,12 @@
 				<string>amfi=0x80 keepsyms=1 -lilubetaall revpatch=sbvmm -v</string>
 				<key>csr-active-config</key>
 				<data>ZwgAAA==</data>
+				<key>bluetoothExternalDongleFailed</key>
+				<data>AA==</data>
+				<key>bluetoothInternalControllerInfo</key>
+				<data>AAAAAAAAAAAAAAAAAAA=</data>
 				<key>prev-lang:kbd</key>
-				<string>en-US:0
-en-US:0</string>
+				<string>en-US:0en-US:0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>
@@ -1845,7 +1848,7 @@ en-US:0</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02836104GUJH4R1M</string>
+			<string>C028176004NJH4RUE</string>
 			<key>ProcessorType</key>
 			<integer>1793</integer>
 			<key>ROM</key>
@@ -1857,9 +1860,9 @@ en-US:0</string>
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XC2ZNJHCC</string>
+			<string>C02WM0B2JHCC</string>
 			<key>SystemUUID</key>
-			<string>3932C2C0-2913-48C0-8434-D30A17A775D6</string>
+			<string>5F18DDE8-95EC-4814-8F86-48FE07345DFC</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
