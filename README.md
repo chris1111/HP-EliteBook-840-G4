@@ -19,6 +19,7 @@
 
 ### Install Instructions: ⬇︎ For Ventura, Sonoma, Sequoia using BCM94360NG native Wifi card
 - For Sonoma and Sequoia use Release V-2.0.2 OCLP to make Broadcom Wifi working. [OpenCore-Patcher.pkg](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.0.2/OpenCore-Patcher.pkg)
+- Ventuta 13 not need to using OCLP BCM94360NG is native on macOS 13
 
 #### Clone the repository and Build
 ```bash
