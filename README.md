@@ -18,6 +18,8 @@
 
 
 ### Install Instructions: ⬇︎ For Ventura, Sonoma, Sequoia using BCM94360NG native Wifi card
+- For Sonoma and Sequoia use Release V-2.0.2 OCLP to make Broadcom Wifi working. [OpenCore-Patcher.pkg](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.0.2/OpenCore-Patcher.pkg)
+
 #### Clone the repository and Build
 ```bash
 git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
