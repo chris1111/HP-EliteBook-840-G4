@@ -1,8 +1,7 @@
 # HP-EliteBook-840-G4
 - OpenCore / macOS Sonoma 14 / macOS Ventura 13
 
-### Latest Update 07 April 2024
-- No need to rename the disk anymore. The user will have to confirm their choices.
+### Latest Update 18 Oct 2024 OpenCore V-1.0.3
 
 
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
