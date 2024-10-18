@@ -17,48 +17,16 @@
 ![Screenshot 2022-08-01 at 7 58 24 PM](https://user-images.githubusercontent.com/6248794/182264336-393bf0a0-5cde-498e-8bbc-e6f5cf76a1f0.png)
 
 
-### Install Instructions: ⬇︎ For Ventura using BCM94360NG native Wifi card
-#### Clone the repository
+### Install Instructions: ⬇︎ For Ventura, Sonoma, Sequoia using BCM94360NG native Wifi card
+#### Clone the repository and Build
 ```bash
-git clone https://github.com/chris1111/HP-EliteBook-840-G4.git
-cd $HOME/HP-EliteBook-840-G4
-```
-
-#### Build
-```bash
-make
-```
-
-
-### Install Instructions: ⬇︎ using Broadcom wifi-sonoma branch for User with an BCM wifi card compatible
-#### Clone the repository
-```bash
-git clone --branch Broadcom-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git
-cd $HOME/HP-EliteBook-840-G4
-```
-
-#### Build
-```bash
-make
+git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
 ```
 
 ### Install Instructions: ⬇︎ using Intel wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
 #### Clone the repository
 ```bash
 git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git
-cd $HOME/HP-EliteBook-840-G4
-```
-
-#### Build
-```bash
-make
-```
-
-### Install Instructions: ⬇︎ For Sequoia Beta (Wifi Bluetooth Broadcom will work)
-- with OCLP Github Artifacts Link: https://github.com/dortania/OpenCore-Legacy-Patcher/actions/runs/10479466899/artifacts/1834680165)
-#### Clone the repository
-```bash
-git clone --branch Broadcom-Wifi-Sequoia-Beta https://github.com/chris1111/HP-EliteBook-840-G4.git
 cd $HOME/HP-EliteBook-840-G4
 ```
 
