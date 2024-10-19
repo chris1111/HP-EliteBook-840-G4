@@ -249,6 +249,5 @@ git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-8
 - [andreszerocross](https://github.com/andreszerocross/VoodooRMI) VoodooRMI
 
 
-Looking for ➦ [HP_EliteBook-840_G3.zip](https://github.com/chris1111/HP-EliteBook-840-G4/files/13370929/HP_EliteBook-840_G3.zip)
-
+Looking for ➦ [HP_EliteBook-840_G3.zip](https://github.com/user-attachments/files/17442013/HP_EliteBook-840_G3.zip)
  
