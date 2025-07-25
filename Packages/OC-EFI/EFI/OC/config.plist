@@ -906,7 +906,7 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBMAP.kext</string>
+				<string>USBPorts.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -1342,7 +1342,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AMFIPass</string>
 				<key>MaxKernel</key>
@@ -1625,7 +1625,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
 		<array/>
@@ -1791,7 +1791,7 @@
 				<key>bluetoothInternalControllerInfo</key>
 				<data>AAAAAAAAAAAAAAAAAAA=</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 -lilubetaall -no_compat_check -v</string>
+				<string>amfi=0x80 keepsyms=1 debug=0x100 -lilubetaall -no_compat_check -v</string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1866,7 +1866,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>FVF948609GU0000AD</string>
+			<string>FVF929303J90000UE</string>
 			<key>ProcessorType</key>
 			<integer>1793</integer>
 			<key>ROM</key>
@@ -1878,9 +1878,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFZRYZCL40Y</string>
+			<string>FVFZ303FL40Y</string>
 			<key>SystemUUID</key>
-			<string>32C15441-B15A-4DFB-9F5C-07773B490818</string>
+			<string>2460D711-7CA4-42A8-83CD-1C45275C20AC</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1898,7 +1898,7 @@
 		<key>APFS</key>
 		<dict>
 			<key>EnableJumpstart</key>
-			<true/>
+			<false/>
 			<key>GlobalConnect</key>
 			<false/>
 			<key>HideVerbose</key>
@@ -1979,6 +1979,18 @@
 				<false/>
 				<key>Path</key>
 				<string>CrScreenshotDxe.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>apfs_aligned.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
