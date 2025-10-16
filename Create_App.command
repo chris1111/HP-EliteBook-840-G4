@@ -71,6 +71,9 @@ cp ./Files_In/LICENSE "$APP_NAME"/Contents/Resources/LICENSE.txt
 # Copy description
 cp -rp ./Files_In/description.rtfd "$APP_NAME"/Contents/Resources
 
+# Copy Assets
+cp -rp ./Files_In/Assets.car "$APP_NAME"/Contents/Resources
+
 # Copy Installer
 cp -rp ./OpenCore.pkg "$APP_NAME"/Contents/Resources/Scripts
 
