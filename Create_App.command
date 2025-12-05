@@ -63,7 +63,7 @@ rm -rf ./Packages/OpenCore-Package
 Sleep 2
 
 # Create the dir structure
-/usr/bin/osacompile -o "$APP_NAME" "$SOURCE_SCRIPT"
+/usr/bin/osacompile -o "$APP_NAME" -u "$SOURCE_SCRIPT"
 
 # Copy Licenses
 cp ./Files_In/LICENSE "$APP_NAME"/Contents/Resources/LICENSE.txt
