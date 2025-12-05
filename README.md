@@ -32,6 +32,14 @@ git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-El
 git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
 ```
 
+### Install Instructions: ⬇︎ For Tahoe using BCM94360NG Wifi card
+- For Tahoe 26 use Release V-3.0.0 OCLP to make Broadcom Wifi working. [OCLP-tahoe-patchset V-3.0.0](https://github.com/com-chris1111/OpenCore-Legacy-Tahoe-Patchset/releases/tag/v-3.0.0)
+- You Need Ethernet connection to using OCLP-tahoe-patchset V-3.0.0
+- #### Clone the repository and Bild
+```bash
+git clone --branch Tahoe https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
+```
+
 
 ##### Laptop Specifications:
 - Intel Core i7-7600U Quad Core CPU
