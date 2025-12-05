@@ -63,7 +63,8 @@ rm -rf ./Packages/OpenCore-Package
 Sleep 2
 
 # Create the dir structure
-/usr/bin/osacompile -o "$APP_NAME" "$SOURCE_SCRIPT"
+dir=$(cd $(dirname "$1"); pwd)
+/usr/bin/osacompile -o "$APP_NAME" -u "$SOURCE_SCRIPT"
 
 # Copy Licenses
 cp ./Files_In/LICENSE "$APP_NAME"/Contents/Resources/LICENSE.txt
@@ -77,12 +78,13 @@ cp -rp ./Files_In/Assets.car "$APP_NAME"/Contents/Resources
 # Copy Installer
 cp -rp ./OpenCore.pkg "$APP_NAME"/Contents/Resources/Scripts
 
-
 Sleep 2
-
 # Copy applet.icns
 cp -rp ./Files_In/applet.icns "$APP_NAME"/Contents/Resources
 cp -rp ./Files_In/applet.icns "$APP_NAME"/Contents/Resources/Scripts
+Sleep 1
+# Use Startup screen, LSUIElement
+defaults write "$dir/$APP_NAME"/Contents/Info LSUIElement -bool true
 # Zip app
 Sleep 1
 zip -r "$APP_NAME".zip "$APP_NAME"
@@ -91,11 +93,13 @@ rm -rf "$APP_NAME"
 unzip "$APP_NAME".zip
 Sleep 1
 
+
 # Remove app
 rm -rf ./OpenCore.pkg
 rm -rf ./"$APP_NAME".zip
 
 Open $APP_NAME
+Open ./
 
 echo " = = = = = = = = = = = = = = = = = = = = = = = = = 
 HP-EliteBook-840-G4.app completed
