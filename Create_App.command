@@ -96,6 +96,7 @@ rm -rf ./OpenCore.pkg
 rm -rf ./"$APP_NAME".zip
 
 Open $APP_NAME
+Open ./
 
 echo " = = = = = = = = = = = = = = = = = = = = = = = = = 
 HP-EliteBook-840-G4.app completed
