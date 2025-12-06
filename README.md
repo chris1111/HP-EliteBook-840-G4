@@ -33,7 +33,7 @@ git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-8
 ```
 
 ### Install Instructions: ⬇︎ For Tahoe using BCM94360NG Wifi card
-- For Tahoe 26 use Release V-3.0.0 OCLP to make Broadcom Wifi working. [OCLP-tahoe-patchset V-3.0.0](https://github.com/com-chris1111/OpenCore-Legacy-Tahoe-Patchset/releases/tag/v-3.0.0)
+- For Tahoe 26 use Release V-3.0.0 OCLP to make Broadcom Wifi working. [OCLP-tahoe-patchset V-3.0.0](https://github.com/chris1111/OpenCore-Legacy-Tahoe_Patchset/releases/tag/V-3.0.0)  
 - You Need Ethernet connection to using OCLP-tahoe-patchset V-3.0.0
 - #### Clone the repository and Bild
 ```bash
