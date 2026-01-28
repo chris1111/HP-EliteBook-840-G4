@@ -96,67 +96,10 @@ git clone --branch Tahoe https://github.com/chris1111/HP-EliteBook-840-G4.git &&
 - System Management Command ➤ Enable
 
 # Advanced
-
-
-## Display Language ➤ (Your Language)
-## Select Keyboard Layout ➤ (Your Language)
-## Scheduled Power-On
-- Sunday ➤ Disable
-- Monday ➤ Disable
-- Tuesday ➤ Disable
-- Wednesday ➤ Disable
-- Thursday ➤ Disable
-- Friday ➤ Disable
-- Saturday ➤ Disable
-
-	
-## Boot Options
-- Startup Delay (sec.) ➤ 0
-- Fast Boot ➤ Disable
-- Audio Alerts During Boot ➤ Enable
-- NumLock on at boot ➤ Enable
-- USB Storage Boot ➤ Enable
-- Prompt on Memory Size Change ➤ Disable
-- Network (PXE) Boot ➤ Disable
-- Prompt on Fixed Storage Change ➤ Disable
-- Prompt on Battery Errors ➤ Enable
-- Legacy Boot Options ➤ Disable
-- Legacy Boot Order ➤ (Your Disk order)
-- UEFI Boot Options ➤ Enable
-- UEFI Boot Order (Your Disk order)
-
-
-## Secure Boot Configuration
-- Configure Legacy Support and Secure Boot ➤ Legacy Support Enable and Secure Boot Disable
-- Import Custom Secure Boot keys ➤ Do Nothing
-- Clear Secure Boot keys ➤ Disable
-- Reset Secure Boot keys to factory defaults ➤ Disable
-- Enable MS UEFI CA key ➤ Yes
-- Ready to disable MS UEFI CA Key ➤ Ready
-- Custom Keys Image Verification State ➤ No Custom Keys
-- Ready BIOS for Device Guard Use ➤ Do Nothing
-
-
-
-
-
-
-## System Options
-- Turbo-boost ➤ Enable
-- Hyperthreading ➤ Enable
-- Multi-processor ➤ Enable
-- Virtualization Technology (VTx) ➤ Enable
-- Virtualization Technology for Directed I/O (VTd) ➤ Disable
-- Fast Charge ➤ Disable
-- Special Key mapped to Fn + keypress ➤ Disable
-- Swap Fn control (Keys) ➤ Disable
-- Launch or key without Fn keypress ➤ Enable
-- Enable Turbo Boost on DC ➤ Enable
-- HP Application Driver ➤ Disable
-
 ## Buil-in Device Options
 - Embedded LAN controller➤ Enable
 - Wake On LAN➤ Boot to Hard Drive
+- Video memory size 64MB
 - Integrated Microphone ➤ Enable
 - Internal Speakers ➤ Enable
 - Runtime Power Management ➤ Enable
@@ -174,6 +117,55 @@ git clone --branch Tahoe https://github.com/chris1111/HP-EliteBook-840-G4.git &&
 - Fingerprint Device ➤ Disable
 - Touch Device ➤ Enable
 - Disable Battery On Next Boot ➤ Do not disable
+
+## Display Language ➤ (Your Language)
+## Select Keyboard Layout ➤ (Your Language)
+## Scheduled Power-On
+- Sunday ➤ Disable
+- Monday ➤ Disable
+- Tuesday ➤ Disable
+- Wednesday ➤ Disable
+- Thursday ➤ Disable
+- Friday ➤ Disable
+- Saturday ➤ Disable
+	
+## Boot Options
+- Startup Delay (sec.) ➤ 0
+- Fast Boot ➤ Disable
+- Audio Alerts During Boot ➤ Enable
+- NumLock on at boot ➤ Enable
+- USB Storage Boot ➤ Enable
+- Prompt on Memory Size Change ➤ Disable
+- Network (PXE) Boot ➤ Disable
+- Prompt on Fixed Storage Change ➤ Disable
+- Prompt on Battery Errors ➤ Enable
+- Legacy Boot Options ➤ Disable
+- Legacy Boot Order ➤ (Your Disk order)
+- UEFI Boot Options ➤ Enable
+- UEFI Boot Order (Your Disk order)
+
+## Secure Boot Configuration
+- Configure Legacy Support and Secure Boot ➤ Legacy Support Enable and Secure Boot Disable
+- Import Custom Secure Boot keys ➤ Do Nothing
+- Clear Secure Boot keys ➤ Disable
+- Reset Secure Boot keys to factory defaults ➤ Disable
+- Enable MS UEFI CA key ➤ Yes
+- Ready to disable MS UEFI CA Key ➤ Ready
+- Custom Keys Image Verification State ➤ No Custom Keys
+- Ready BIOS for Device Guard Use ➤ Do Nothing
+
+## System Options
+- Turbo-boost ➤ Enable
+- Hyperthreading ➤ Enable
+- Multi-processor ➤ Enable
+- Virtualization Technology (VTx) ➤ Enable
+- Virtualization Technology for Directed I/O (VTd) ➤ Disable
+- Fast Charge ➤ Disable
+- Special Key mapped to Fn + keypress ➤ Disable
+- Swap Fn control (Keys) ➤ Disable
+- Launch or key without Fn keypress ➤ Enable
+- Enable Turbo Boost on DC ➤ Enable
+- HP Application Driver ➤ Disable
 
 ## Port Options
 - Media Card Reader ➤ Enable
