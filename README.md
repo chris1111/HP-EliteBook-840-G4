@@ -14,7 +14,8 @@
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/180882015-aa6209bd-a10d-4a1e-85cf-d9729b8e0efc.png)](https://youtu.be/jwMZei4FWgo)
 
 ### You can create an Install USB key. You can use OpenCore package individually.
-![Screenshot 2022-08-01 at 7 58 24 PM](https://user-images.githubusercontent.com/6248794/182264336-393bf0a0-5cde-498e-8bbc-e6f5cf76a1f0.png)
+<img width="665" height="296" alt="Screenshot" src="https://github.com/user-attachments/assets/25ad2655-81a9-4588-a14d-959d963289f9" />
+
 
 
 ### Install Instructions: ⬇︎ For Ventura, Sonoma, Sequoia using BCM94360NG native Wifi card
