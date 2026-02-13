@@ -4,6 +4,8 @@
 ### Latest Update 22 june 2025 Add Branch for macOS Tahoe 26
 - OpenCore 1.0.5 -2025-06-11
 
+<img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=gift&color=%23198754&message=&style=for-the-badge&tz=US%2FEastern">
+
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
 
 
