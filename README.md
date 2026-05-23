@@ -1,8 +1,8 @@
 # HP-EliteBook-840-G4
 - OpenCore / macOS Sonoma 14 / macOS Ventura 13
 
-### Latest Update 22 june 2025 Add Branch for macOS Tahoe 26
-- OpenCore 1.0.5 -2025-06-11
+### Latest Update 23 May 2026 Add Branch Xcode build for macOS Tahoe 26
+- OpenCore 1.0.7 -2025-11-22
 
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
 
@@ -39,6 +39,17 @@ git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-8
 ```bash
 git clone --branch Tahoe https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
 ```
+
+### Xcode Build Project: Install Instructions: ⬇︎ For Tahoe using BCM94360NG Wifi card
+- For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V6) 
+- #### Clone the repository and Bild
+```bash
+git clone --branch Xcode-Project https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
+```
+
+### IMPORTANT: Before post install macOS Tahoe ➥ [Readme Post Install](https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Post-Readme.md)
+
+---------------------------------------
 
 ##### Laptop Specifications:
 - Intel Core i7-7600U Quad Core CPU
