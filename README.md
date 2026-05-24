@@ -42,7 +42,7 @@ git clone --branch Tahoe https://github.com/chris1111/HP-EliteBook-840-G4.git &&
 
 ### Xcode Build Project: Install Instructions: ⬇︎ For Tahoe using BCM94360NG Wifi card
 - For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V6) 
-- #### Clone the repository and Bild
+- #### Clone the repository and Build
 ```bash
 git clone --branch Xcode-Project https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
 ```
