@@ -14,7 +14,8 @@
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/180882015-aa6209bd-a10d-4a1e-85cf-d9729b8e0efc.png)](https://youtu.be/jwMZei4FWgo)
 
 ### You can create an Install USB key. You can use OpenCore package individually.
-<img width="665" height="296" alt="Screenshot" src="https://github.com/user-attachments/assets/25ad2655-81a9-4588-a14d-959d963289f9" />
+<img width="564" height="194" alt="App" src="https://github.com/user-attachments/assets/c751181f-ff5d-47ab-9bc5-cf595c3ed1a0" />
+
 
 
 
