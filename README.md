@@ -1,7 +1,8 @@
 # HP-EliteBook-840-G4
 - OpenCore / macOS Sonoma 14 / macOS Ventura 13
 
-### Latest Update 23 May 2026 Add Branch Xcode build for macOS Tahoe 26
+### Latest Update 25 May 2026 Update EFI for the main branch
+- Update 23 May 2026 Add Branch Xcode build for macOS Tahoe 26
 - OpenCore 1.0.7 -2025-11-22
 
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
