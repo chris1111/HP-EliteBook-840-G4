@@ -85,6 +85,11 @@ cp -rp ./Files_In/applet.icns "$APP_NAME"/Contents/Resources/Scripts
 Sleep 1
 # Use Startup screen, LSUIElement
 defaults write "$dir/$APP_NAME"/Contents/Info LSUIElement -bool true
+Sleep 1
+mv "$dir/$APP_NAME"/Contents/MacOS/applet "$dir/$APP_NAME"/Contents/MacOS/HP_EliteBook-840_G4
+Sleep 1
+defaults write "$dir/$APP_NAME"/Contents/Info CFBundleExecutable -string HP_EliteBook-840_G4
+Sleep 1
 # Zip app
 Sleep 1
 zip -r "$APP_NAME".zip "$APP_NAME"
