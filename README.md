@@ -1,7 +1,7 @@
 # HP-EliteBook-840-G4
 - OpenCore / macOS Big Sur 11 to / macOS Tahoe 26
 
-### Latest Latest Update 26 May 2026 Release V7 is now only Objective-C
+### Latest Update 26 May 2026 Release V7 is now only Objective-C
 - Update 25 May 2026 Update EFI for the main branch
 - Update 23 May 2026 Add Branch Xcode build for macOS Tahoe 26
 - OpenCore 1.0.7 -2025-11-22
