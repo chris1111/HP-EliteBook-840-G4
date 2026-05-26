@@ -1,24 +1,25 @@
 # HP-EliteBook-840-G4
-- OpenCore / macOS Sonoma 14 / macOS Ventura 13
+- OpenCore / macOS Big Sur 11 to / macOS Tahoe 26
 
-### Latest Update 25 May 2026 Update EFI for the main branch
+### Latest Latest Update 26 May 2026 Release V7 is now only Objective-C
+- Update 25 May 2026 Update EFI for the main branch
 - Update 23 May 2026 Add Branch Xcode build for macOS Tahoe 26
 - OpenCore 1.0.7 -2025-11-22
+  
+### Download latest Release ➤ [HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V7)
 
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
 
-
 ![HP EliteBook 840 G4](https://user-images.githubusercontent.com/6248794/180880895-2980622f-2421-4e36-a178-1fdedc10b38a.png)
-
 
 ### Show small Video Touch screen ⬇︎
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/180882015-aa6209bd-a10d-4a1e-85cf-d9729b8e0efc.png)](https://youtu.be/jwMZei4FWgo)
 
 ### You can create an Install USB key. You can use OpenCore package individually.
-<img width="564" height="194" alt="App" src="https://github.com/user-attachments/assets/c751181f-ff5d-47ab-9bc5-cf595c3ed1a0" />
 
+<img width="483" height="394" alt="Screenshot" src="https://github.com/user-attachments/assets/06841ab9-19e4-4689-951e-c8be57d54f11" />
 
-
+<img width="564" height="194" alt="App" src="https://github.com/user-attachments/assets/5d24d3f4-8fa4-4ec5-86be-b61b1f8fba72" />
 
 ### Install Instructions: ⬇︎ For Ventura, Sonoma, Sequoia using BCM94360NG native Wifi card
 - For Sonoma and Sequoia use Release V-2.0.2 OCLP to make Broadcom Wifi working. [OpenCore-Patcher.pkg](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.0.2/OpenCore-Patcher.pkg)
