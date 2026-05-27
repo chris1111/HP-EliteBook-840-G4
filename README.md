@@ -14,7 +14,8 @@
 
 Don't worry about the spinning beach ball when you hover your mouse over the app; the whole process works perfectly! Wait until it's finished and you'll see that everything is perfect.
 
-<img width="480" height="388" alt="Screenshot balls" src="https://github.com/user-attachments/assets/d464dd5e-3473-4a3f-b8cb-a671a0062584" />
+<img width="480" height="389" alt="Screenshot ball" src="https://github.com/user-attachments/assets/b8839eb3-db34-4e21-b97c-ce27b77bbae9" />
+
 
 </details>
 
