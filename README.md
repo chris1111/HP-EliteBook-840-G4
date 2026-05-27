@@ -31,26 +31,11 @@ Don't worry about the spinning beach ball when you hover your mouse over the app
 
 <img width="564" height="194" alt="App" src="https://github.com/user-attachments/assets/5d24d3f4-8fa4-4ec5-86be-b61b1f8fba72" />
 
-### Install Instructions: ⬇︎ For Ventura, Sonoma, Sequoia using BCM94360NG native Wifi card
-- For Sonoma and Sequoia use Release V-2.0.2 OCLP to make Broadcom Wifi working. [OpenCore-Patcher.pkg](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.0.2/OpenCore-Patcher.pkg)
-- Ventuta 13 not need to using OCLP BCM94360NG is native on macOS 13
-
-#### Clone the repository and Build
-```bash
-git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
-```
-
-### Xcode Build Project: Install Instructions: ⬇︎ For Tahoe using BCM94360NG Wifi card
+#### Xcode Build Project: Install Instructions: ⬇︎ For macOS Big Sur to macOS Tahoe using BCM94360NG Wifi card
 - For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V6) 
 - #### Clone the repository and Build
 ```bash
 git clone --branch Xcode-Project https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
-```
-
-### Install Instructions: ⬇︎ using Intel wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
-#### Clone the repository and Bild
-```bash
-git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
 ```
 
 ### IMPORTANT: Before post install macOS Tahoe ➥ [Readme Post Install](https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Post-Readme.md)
