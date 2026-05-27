@@ -40,24 +40,17 @@ Don't worry about the spinning beach ball when you hover your mouse over the app
 git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
 ```
 
-### Install Instructions: ⬇︎ using Intel wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
-#### Clone the repository and Bild
-```bash
-git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
-```
-
-### Install Instructions: ⬇︎ For Tahoe using BCM94360NG Wifi card
-- For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V6) 
-- #### Clone the repository and Bild
-```bash
-git clone --branch Tahoe https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
-```
-
 ### Xcode Build Project: Install Instructions: ⬇︎ For Tahoe using BCM94360NG Wifi card
 - For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V6) 
 - #### Clone the repository and Build
 ```bash
 git clone --branch Xcode-Project https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
+```
+
+### Install Instructions: ⬇︎ using Intel wifi-sonoma branch for User with an [Intel wifi card](https://openintelwireless.github.io/itlwm/Compat.html#dvm-iwn) compatible
+#### Clone the repository and Bild
+```bash
+git clone --branch Intel-Wifi-Sonoma https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
 ```
 
 ### IMPORTANT: Before post install macOS Tahoe ➥ [Readme Post Install](https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Post-Readme.md)
