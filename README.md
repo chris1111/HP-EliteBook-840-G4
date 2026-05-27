@@ -7,6 +7,16 @@
 - OpenCore 1.0.7 -2025-11-22
   
 ### Download latest Release ➤ [HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V7)
+### ⬇︎ Spining Beach Ball:  Don't worry, it's not a problem!
+
+<details> 
+  <summary>View Image</summary>
+
+Don't worry about the spinning beach ball when you hover your mouse over the app; the whole process works perfectly! Wait until it's finished and you'll see that everything is perfect.
+
+<img width="480" height="388" alt="Screenshot balls" src="https://github.com/user-attachments/assets/d464dd5e-3473-4a3f-b8cb-a671a0062584" />
+
+</details>
 
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
 
