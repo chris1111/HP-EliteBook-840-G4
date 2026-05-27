@@ -42,7 +42,7 @@ git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-El
 
 ### Install Instructions: ⬇︎ For Sonoma, Sequoia using BCM94360NG native Wifi card
 - For Sonoma and Sequoia use Release V-2.4.1 OCLP to make Broadcom Wifi working. [OpenCore-Patcher.pkg](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.4.1/OpenCore-Patcher.pkg)
-- Big Sur 11, Monterey 12 , Ventuta 13 not need to using OCLP BCM94360NG is native on macOS 13
+- Big Sur 11, Monterey 12 , Ventuta 13 not need to using OCLP BCM94360NG is native on macOS 11, 12, 13
 ---------------------------------------
 
 ##### Laptop Specifications:
