@@ -7,7 +7,7 @@
 - OpenCore 1.0.7 -2025-11-22
   
 ### Download latest Release ➤ [HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V7)
-### ⬇︎ Spining Beach Ball:  Don't worry, it's not a problem!
+#### ⬇︎ Spining Beach Ball: Don't worry.
 
 <details> 
   <summary>View Image</summary>
