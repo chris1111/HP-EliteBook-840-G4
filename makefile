@@ -1,7 +1,7 @@
 
 HP-EliteBook-840-G4:
 	@echo "Building HP-EliteBook-840-G4..."
-	@$(CURDIR)/Create_App.command
+	@$(CURDIR)/Build.command
 		
 	@echo [CLEAN] $(PROGRAMS)
 
