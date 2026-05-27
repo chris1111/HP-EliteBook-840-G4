@@ -16,6 +16,11 @@ Don't worry about the spinning beach ball when you hover your mouse over the app
 
 <img width="480" height="389" alt="Screenshot ball" src="https://github.com/user-attachments/assets/b8839eb3-db34-4e21-b97c-ce27b77bbae9" />
 
+Why does this happen?:
+
+The window server will show the spinning wait cursor when the frontmost application, or the application that has a window under the mouse pointer, has not responded to events from the window server within a certain window of time.
+
+To avoid the spinning wait cursor, an application needs to service events in a timely fashion. There's no way around this window server behavior, and for good reason: Applications on Mac OS X aren't ever supposed to be unresponsive to the user.
 
 </details>
 
