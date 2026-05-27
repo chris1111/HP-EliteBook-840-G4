@@ -35,7 +35,7 @@ Don't worry about the spinning beach ball when you hover your mouse over the app
 - For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V6) 
 - #### Clone the repository and Build
 ```bash
-git clone --branch Xcode-Project https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
+git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
 ```
 
 ### IMPORTANT: Before post install macOS Tahoe ➥ [Readme Post Install](https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Post-Readme.md)
