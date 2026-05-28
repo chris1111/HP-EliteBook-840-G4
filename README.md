@@ -1,28 +1,13 @@
 # HP-EliteBook-840-G4
 - OpenCore / macOS Big Sur 11 to / macOS Tahoe 26
 
-### Latest Update 26 May 2026 Release V7 is now only Objective-C
+### Latest Update 27 May 2026 Fix the temporarily unresponsive App
+- Update 26 May 2026 Release V7 is now only Objective-C
 - Update 25 May 2026 Update EFI for the main branch
 - Update 23 May 2026 Add Branch Xcode build for macOS Tahoe 26
 - OpenCore 1.0.7 -2025-11-22
   
 ### Download latest Release ➤ [HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V7)
-#### ⬇︎ Spining Beach Ball: Don't worry.
-
-<details> 
-  <summary>View Image</summary>
-
-Don't worry about the spinning beach ball when you hover your mouse over the app; the whole process works perfectly! Wait until it's finished and you'll see that everything is perfect.
-
-<img width="480" height="389" alt="Screenshot ball" src="https://github.com/user-attachments/assets/b8839eb3-db34-4e21-b97c-ce27b77bbae9" />
-
-Why does this happen?:
-
-The window server will show the spinning wait cursor when the frontmost application, or the application that has a window under the mouse pointer, has not responded to events from the window server within a certain window of time.
-
-To avoid the spinning wait cursor, an application needs to service events in a timely fashion. There's no way around this window server behavior, and for good reason: Applications on Mac OS X aren't ever supposed to be unresponsive to the user.
-
-</details>
 
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
 

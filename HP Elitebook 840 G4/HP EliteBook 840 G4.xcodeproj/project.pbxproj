@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,10 +23,6 @@
 		839DEF2026DEC62500A1AEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839DEF2126DEC62500A1AEC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		835EF7E82FC5E9F300088A3F /* Scripts */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Scripts; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		839DEF1026DEC62400A1AEC3 /* Frameworks */ = {
@@ -68,7 +64,6 @@
 		839DEF1826DEC62400A1AEC3 /* HP EliteBook 840 G4 */ = {
 			isa = PBXGroup;
 			children = (
-				835EF7E82FC5E9F300088A3F /* Scripts */,
 				839DEF1926DEC62400A1AEC3 /* AppDelegate.applescript */,
 				8308A1E326DFE2BE0011800A /* Assets.xcassets */,
 				839DEF1D26DEC62500A1AEC3 /* MainMenu.xib */,
@@ -92,9 +87,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				835EF7E82FC5E9F300088A3F /* Scripts */,
 			);
 			name = "HP EliteBook 840 G4";
 			productName = "HP-ProBook-EliteBook";
