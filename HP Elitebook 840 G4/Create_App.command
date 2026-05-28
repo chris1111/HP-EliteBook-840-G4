@@ -53,7 +53,8 @@ dir=$(cd $(dirname "$1"); pwd)
 /usr/bin/osacompile -o "$APP_NAME" "$SOURCE_SCRIPT"
 
 # Copy Licenses
-cp ./Helper/LICENSE "$APP_NAME"/Contents/Resources/LICENSE.txt
+cp -rp ./Helper/LICENSE "$APP_NAME"/Contents/Resources/LICENSE.txt
+cp -rp ./Helper/description.rtfd "$APP_NAME"/Contents/Resources
 
 # Copy Assets
 cp -rp ./Helper/Assets.car "$APP_NAME"/Contents/Resources
