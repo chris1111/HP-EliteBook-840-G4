@@ -12,6 +12,7 @@
 		839DEF1A26DEC62400A1AEC3 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 839DEF1926DEC62400A1AEC3 /* AppDelegate.applescript */; };
 		839DEF1F26DEC62500A1AEC3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839DEF1D26DEC62500A1AEC3 /* MainMenu.xib */; };
 		839DEF2226DEC62500A1AEC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 839DEF2126DEC62500A1AEC3 /* main.m */; };
+		83BD57F52FC8F79100A6F4AF /* Center.icns in Resources */ = {isa = PBXBuildFile; fileRef = 83BD57F42FC8F79100A6F4AF /* Center.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		839DEF1E26DEC62500A1AEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		839DEF2026DEC62500A1AEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839DEF2126DEC62500A1AEC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83BD57F42FC8F79100A6F4AF /* Center.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Center.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		839DEF1826DEC62400A1AEC3 /* HP EliteBook 840 G4 */ = {
 			isa = PBXGroup;
 			children = (
+				83BD57F42FC8F79100A6F4AF /* Center.icns */,
 				839DEF1926DEC62400A1AEC3 /* AppDelegate.applescript */,
 				8308A1E326DFE2BE0011800A /* Assets.xcassets */,
 				839DEF1D26DEC62500A1AEC3 /* MainMenu.xib */,
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8308A1E426DFE2BE0011800A /* Assets.xcassets in Resources */,
+				83BD57F52FC8F79100A6F4AF /* Center.icns in Resources */,
 				839DEF1F26DEC62500A1AEC3 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
