@@ -1,7 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/chris/HP-EliteBook-840-G4/HP Elitebook 840 G4/build/Release/HP EliteBook 840 G4.app/Contents/MacOS/HP EliteBook 840 G4'
-relocations:
-  - { offset: 0xCD55B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000888, symSize: 0x5C }
-  - { offset: 0xCD569, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000888, symSize: 0x5C }
-...
