@@ -7,7 +7,7 @@
 - Update 23 May 2026 Add Branch Xcode build for macOS Tahoe 26
 - OpenCore 1.0.7 -2025-11-22
   
-### Download latest Release ➤ [HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V7)
+### Download Release ➤ [HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V1)
 
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
 
