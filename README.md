@@ -18,7 +18,8 @@
 
 ### You can create an Install USB key. You can use OpenCore package individually.
 
-<img width="483" height="394" alt="Screenshot" src="https://github.com/user-attachments/assets/06841ab9-19e4-4689-951e-c8be57d54f11" />
+<img width="477" height="388" alt="Screenshot" src="https://github.com/user-attachments/assets/24642fdd-8f40-4723-a486-70c11d9cfdad" />
+
 
 <img width="564" height="194" alt="App" src="https://github.com/user-attachments/assets/5d24d3f4-8fa4-4ec5-86be-b61b1f8fba72" />
 
