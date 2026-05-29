@@ -722,7 +722,7 @@ Gw
                             <action selector="cancel:" target="Voe-Tx-rLC" id="Gbj-1R-8nY"/>
                         </connections>
                     </button>
-                    <imageView hidden="YES" id="8VX-Sx-OSf">
+                    <imageView hidden="NO" id="8VX-Sx-OSf">
                         <rect key="frame" x="0.0" y="69" width="480" height="280"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="imageCell:ycp-J1-W0J:image" id="ycp-J1-W0J"/>
