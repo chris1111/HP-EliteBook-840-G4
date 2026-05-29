@@ -23,7 +23,7 @@
 <img width="564" height="194" alt="App" src="https://github.com/user-attachments/assets/5d24d3f4-8fa4-4ec5-86be-b61b1f8fba72" />
 
 #### Xcode Build Project: Install Instructions: ⬇︎ For macOS Big Sur to macOS Tahoe using BCM94360NG Wifi card
-- For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V1) 
+- For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V1/OpenCore-Patcher.pkg.zip) 
 - #### Clone the repository and Build
 ```bash
 git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
