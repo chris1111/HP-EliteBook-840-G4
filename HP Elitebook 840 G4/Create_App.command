@@ -7,14 +7,7 @@ cd "$PARENTDIR"
 # Vars
 apptitle="HP EliteBook 840 G4"
 version="1.0"
-# Set Icon directory and file
-export ICNS=$(dirname "${0}")
-iconfile="$ICNS/AppIcon.icns"
 find . -name '.DS_Store' -type f -delete
-
-# Declare some VARS
-APP_NAME="Main.app"
-SOURCE_SCRIPT="./Helper/Main.applescript"
 
 # Delete build if exist
 rm -rf ./Packages/OpenCore-Package
@@ -35,6 +28,8 @@ Sleep 3
 # Copy resources and distribution
 cp -r ./Packages/Distribution ./Packages/OpenCore-Package/BUILD-PACKAGE/Distribution.xml
 cp -rp ./Packages/Resources ./Packages/OpenCore-Package/BUILD-PACKAGE/
+Sleep 2
+mkdir -p ./Installer
 
 echo "
 = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -44,46 +39,12 @@ Sleep 3
 productbuild --distribution "./Packages/OpenCore-Package/BUILD-PACKAGE/Distribution.xml"  \
 --package-path "./Packages/OpenCore-Package/BUILD-PACKAGE/" \
 --resources "./Packages/OpenCore-Package/BUILD-PACKAGE/Resources" \
-"./OpenCore.pkg"
+"./Installer/OpenCore.pkg"
 rm -rf ./Packages/OpenCore-Package
 Sleep 2
-
-# Create the dir structure
-dir=$(cd $(dirname "$1"); pwd)
-/usr/bin/osacompile -o "$APP_NAME" "$SOURCE_SCRIPT"
-
-# Copy Licenses
-cp -rp ./Helper/LICENSE "$APP_NAME"/Contents/Resources/LICENSE.txt
-cp -rp ./Helper/description.rtfd "$APP_NAME"/Contents/Resources
-
-# Copy Assets
-cp -rp ./Helper/Assets.car "$APP_NAME"/Contents/Resources
-
-# Copy Installer, applet
-cp -rp ./OpenCore.pkg "$APP_NAME"/Contents/Resources
-cp -rp ./Helper/applet.icns "$APP_NAME"/Contents/Resources
-cp -rp ./Helper/applet.icns "$APP_NAME"/Contents/Resources/Scripts
-
+cp -rp ./Installer ./build/Release/HP\ EliteBook\ 840\ G4.app/Contents/Resources
 Sleep 1
-# Use Startup screen, LSUIElement
-defaults write "$dir/$APP_NAME"/Contents/Info LSUIElement -bool true
-defaults write "$dir/$APP_NAME"/Contents/Info CFBundleExecutable -string Main
-mv "$dir/$APP_NAME"/Contents/MacOS/applet "$dir/$APP_NAME"/Contents/MacOS/Main
-
-# Zip app
-Sleep 1
-zip -r "$APP_NAME".zip "$APP_NAME"
-Sleep 1
-rm -rf "$APP_NAME"
-unzip "$APP_NAME".zip
-Sleep 1
-cp -rp "$APP_NAME" ./build/Release/HP\ EliteBook\ 840\ G4.app/Contents/Resources
-Sleep 1
-# Remove app
-rm -rf ./OpenCore.pkg
-rm -rf ./"$APP_NAME".zip
-rm -rf ./"$APP_NAME"
-
+rm -rf ./Installer
 
 echo " = = = = = = = = = = = = = = = = = = = = = = = = = 
 HP EliteBook 840 G4.app completed
