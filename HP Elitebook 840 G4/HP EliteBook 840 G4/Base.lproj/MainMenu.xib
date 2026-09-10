@@ -684,7 +684,7 @@
         <window title="HP EliteBook 840 G4" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="356"/>
+            <rect key="contentRect" x="720" y="415" width="480" height="356"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1050"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="356"/>
@@ -729,7 +729,7 @@ Gw
                     </imageView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-709" y="-1803"/>
+            <point key="canvasLocation" x="-882" y="-1613"/>
         </window>
     </objects>
     <resources>
