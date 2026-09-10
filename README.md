@@ -81,5 +81,4 @@ git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-El
 - [alexandred](https://github.com/alexandred) VoodooI2C
 - [andreszerocross](https://github.com/andreszerocross/VoodooRMI) VoodooRMI
 
-
-Looking for ➦ [HP_EliteBook-840_G3.zip](https://github.com/user-attachments/files/17442117/HP_EliteBook-840_G3.zip) 
+Looking for ➦ [HP EliteBook 840 G3.zip](https://github.com/user-attachments/files/32028284/HP.EliteBook.840.G3.zip)
