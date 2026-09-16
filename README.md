@@ -1,7 +1,8 @@
 # HP-EliteBook-840-G4
 - OpenCore / macOS Big Sur 11 to / macOS Tahoe 26
 
-### Latest Update 09 Sept 2026 Pure Objective-C code no more unresponsive App
+### Latest Update 16 Sept 2026 Refractor Create_App build script
+- Update 09 Sept 2026 Pure Objective-C code no more unresponsive App
 - Update 27 May 2026 Fix the temporarily unresponsive App
 - Update 26 May 2026 Release V7 is now only Objective-C
 - Update 25 May 2026 Update EFI for the main branch
