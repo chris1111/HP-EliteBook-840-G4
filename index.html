@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>HP EliteBook 840 G4</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ tokens & reset ============ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0c;
+  --bg-2:#0f0f13;
+  --bg-3:#15151b;
+  --line:rgba(255,255,255,.08);
+  --line-2:rgba(255,255,255,.16);
+  --text:#f2f2f4;
+  --text-2:rgba(235,235,245,.68);
+  --text-3:rgba(235,235,245,.42);
+  --amber:#ff9f0a;
+  --amber-2:#ffb340;
+  --amber-soft:rgba(255,159,10,.09);
+  --green:#30d158;
+  --green-soft:rgba(48,209,88,.1);
+  --font-d:'Clash Display','Space Grotesk',sans-serif;
+  --font-b:'Space Grotesk',sans-serif;
+  --font-m:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-b);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+/* film grain — very subtle */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:120;opacity:.032;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+}
+::selection{background:var(--amber);color:#181004}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#26262e;border-radius:8px;border:2px solid var(--bg)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+section{scroll-margin-top:96px}
+.container{max-width:1140px;margin:0 auto;padding:0 28px}
+
+/* ============ reveal on scroll ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease var(--d,0s),transform .8s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ nav ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  transition:background .35s,border-color .35s,backdrop-filter .35s;
+  border-bottom:1px solid transparent;
+}
+.nav.scrolled{background:rgba(10,10,12,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.nav-inner{max-width:1140px;margin:0 auto;padding:0 28px;height:68px;display:flex;align-items:center;gap:30px}
+.brand{display:flex;align-items:center;gap:11px;font:600 .82rem var(--font-m);letter-spacing:.06em;color:var(--text)}
+.brand svg{color:var(--text)}
+.brand em{font-style:normal;color:var(--amber)}
+.nav-links{display:flex;gap:26px;margin-left:auto}
+.nav-links a{font:500 .8rem var(--font-m);color:var(--text-3);letter-spacing:.04em;padding:6px 0;border-bottom:1px solid transparent;transition:.25s}
+.nav-links a:hover{color:var(--text)}
+.nav-links a.active{color:var(--text);border-bottom-color:var(--amber)}
+.nav-cta{margin-left:6px;font:600 .78rem var(--font-b);color:#181004;background:var(--amber);padding:9px 16px;border-radius:8px;transition:.25s;display:inline-block}
+.nav-cta:hover{background:var(--amber-2)}
+
+/* ============ hero ============ */
+.hero{position:relative;padding:158px 0 96px;overflow:hidden}
+.hero::before{ /* responsive dot matrix, parallaxed by cursor */
+  content:"";position:absolute;inset:-40px;z-index:0;
+  background-image:radial-gradient(rgba(255,255,255,.13) 1px,transparent 1.4px);
+  background-size:26px 26px;
+  -webkit-mask-image:radial-gradient(70% 90% at 68% 18%,#000 0%,transparent 72%);
+  mask-image:radial-gradient(70% 90% at 68% 18%,#000 0%,transparent 72%);
+  transform:translate3d(calc(var(--mx,0)*-16px),calc(var(--my,0)*-16px),0);
+  transition:transform .4s ease-out;
+}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.04fr .96fr;gap:60px;align-items:center}
+.kicker{font:600 .7rem var(--font-m);letter-spacing:.24em;text-transform:uppercase;color:var(--amber);display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:26px;height:1px;background:var(--amber)}
+.hero h1{
+  font-family:var(--font-d);font-weight:600;
+  font-size:clamp(2.9rem,6.4vw,4.9rem);
+  line-height:1.02;letter-spacing:-.02em;margin:22px 0 18px;
+}
+.hero h1 .accent{color:var(--amber)}
+.ver-line{font:500 .84rem var(--font-m);color:var(--text-2);letter-spacing:.02em;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ver-line .arr{color:var(--amber);font-weight:600}
+.hero p.sub{max-width:52ch;color:var(--text-2);margin:20px 0 32px;font-size:1.02rem}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 .92rem/1 var(--font-b);padding:15px 24px;border-radius:10px;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,border-color .2s,color .2s}
+.btn svg{width:16px;height:16px}
+.btn-primary{background:var(--amber);color:#181004}
+.btn-primary:hover{background:var(--amber-2);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line-2);color:var(--text);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.34);background:rgba(255,255,255,.05);transform:translateY(-2px)}
+.meta-row{display:flex;margin-top:44px;border-top:1px solid var(--line)}
+.meta{padding:18px 28px 0 0;margin-right:28px;border-right:1px solid var(--line)}
+.meta:last-child{border-right:0;margin-right:0}
+.meta b{display:block;font:600 .62rem var(--font-m);letter-spacing:.2em;color:var(--text-3);text-transform:uppercase;margin-bottom:6px}
+.meta span{font:500 .92rem var(--font-m);color:var(--text)}
+.meta span i{font-style:normal;color:var(--amber)}
+
+/* ============ hero visual (laptop in window frame) ============ */
+.tilt{transform:perspective(1100px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .3s ease-out;will-change:transform}
+.hero-shot{border:1px solid var(--line-2);border-radius:14px;overflow:hidden;background:#0e0e13;box-shadow:0 34px 90px -22px rgba(0,0,0,.65)}
+.hero-shot img{width:100%}
+
+/* ============ window chrome (shared) ============ */
+.window{background:#0e0e13;border:1px solid var(--line-2);border-radius:14px;overflow:hidden;box-shadow:0 34px 90px -22px rgba(0,0,0,.65)}
+.win-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.tl{width:11px;height:11px;border-radius:50%}
+.tl.r{background:#ff5f57}.tl.y{background:#febc2e}.tl.g{background:#28c840}
+.win-title{margin-left:10px;font:500 .72rem var(--font-m);color:var(--text-3);letter-spacing:.04em}
+
+/* ============ notice ============ */
+.notice{margin-top:8px}
+.notice-inner{display:flex;gap:18px;align-items:flex-start;border:1px solid rgba(255,159,10,.3);background:var(--amber-soft);border-radius:14px;padding:22px 26px}
+.notice-inner svg{width:22px;height:22px;flex:none;color:var(--amber);margin-top:2px}
+.notice b{font:600 .66rem var(--font-m);letter-spacing:.22em;color:var(--amber);text-transform:uppercase;display:block;margin-bottom:4px}
+.notice p{color:var(--text-2);font-size:.95rem;max-width:76ch}
+.notice p strong{color:var(--text)}
+
+/* ============ section headers ============ */
+.sec{padding:108px 0 0}
+.sec-head{display:flex;align-items:baseline;gap:26px;margin-bottom:48px}
+.sec-index{font:600 .78rem var(--font-m);color:var(--amber);letter-spacing:.1em;flex:none}
+.sec-index::after{content:"";display:inline-block;width:44px;height:1px;background:var(--line-2);vertical-align:middle;margin-left:16px}
+.sec-head h2{font-family:var(--font-d);font-weight:600;font-size:clamp(1.8rem,3.6vw,2.6rem);letter-spacing:-.015em;line-height:1.1}
+.sec-head p{color:var(--text-3);font-size:.92rem;margin-top:6px;max-width:60ch}
+
+/* ============ video (full-width card, natural proportions) ============ */
+.media-video-lg{position:relative;display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg-2);transition:border-color .3s,transform .3s}
+.media-video-lg:hover{border-color:var(--line-2);transform:translateY(-4px)}
+.media-video-lg .vwrap{position:relative;overflow:hidden;line-height:0;background:#0b0b0f}
+.media-video-lg .vwrap img{width:100%;height:auto}   /* natural aspect — no crop, no zoom */
+.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:rgba(10,10,12,.68);backdrop-filter:blur(6px);border:1px solid var(--line-2);display:grid;place-items:center;transition:.3s}
+.media-video-lg:hover .play{background:var(--amber);border-color:var(--amber)}
+.play svg{width:19px;height:19px;fill:var(--text);margin-left:3px;transition:.3s}
+.media-video-lg:hover .play svg{fill:#181004}
+.media-video-label{padding:14px 20px;border-top:1px solid var(--line);font:500 .76rem var(--font-m);color:var(--text-2);letter-spacing:.04em;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.media-video-label i{font-style:normal;color:var(--amber)}
+
+/* ============ timeline ============ */
+.timeline{position:relative}
+.tl-item{display:grid;grid-template-columns:96px 42px 1fr;padding:26px 0;border-top:1px solid var(--line)}
+.tl-item:first-child{border-top:0;padding-top:0}
+.tl-date{text-align:right;padding-right:6px}
+.tl-date .d{display:block;font:600 1.5rem var(--font-m);color:var(--text);line-height:1.1}
+.tl-date .m{font:500 .62rem var(--font-m);letter-spacing:.18em;color:var(--text-3)}
+.tl-rail{position:relative}
+.tl-rail::before{content:"";position:absolute;left:50%;top:6px;bottom:-26px;width:1px;background:var(--line);transform:translateX(-50%)}
+.tl-item:last-of-type .tl-rail::before{bottom:auto;height:100%}
+.tl-dot{position:absolute;left:50%;top:9px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--text-3);transform:translateX(-50%)}
+.tl-item.latest .tl-dot{border-color:var(--amber);background:var(--amber);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,159,10,.35)}100%{box-shadow:0 0 0 14px rgba(255,159,10,0)}}
+.tl-body h3{font:600 1.08rem var(--font-b);letter-spacing:-.01em;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tl-body p{color:var(--text-2);font-size:.92rem;max-width:62ch;margin-top:5px}
+.tl-badge{font:600 .58rem var(--font-m);letter-spacing:.18em;text-transform:uppercase;color:#181004;background:var(--amber);border-radius:5px;padding:4px 8px}
+.tl-base{display:flex;align-items:center;gap:14px;padding:24px 0 4px;border-top:1px solid var(--line);font:500 .78rem var(--font-m);color:var(--text-3)}
+.tl-base i{font-style:normal;color:var(--amber)}
+
+/* ============ compatibility ============ */
+.compat-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:26px;gap:20px;flex-wrap:wrap}
+.legend{display:flex;gap:22px;font:500 .68rem var(--font-m);color:var(--text-3);letter-spacing:.06em}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:0}
+.legend .dg{background:var(--green)}.legend .da{background:var(--amber)}
+.compat-rail{display:flex;gap:14px}
+.cv{flex:1;background:none;border:0;border-top:2px solid var(--line);cursor:pointer;display:flex;flex-direction:column;gap:3px;padding:16px 4px 4px 14px;text-align:left;position:relative;transition:border-color .3s}
+.cv::before{content:"";position:absolute;top:-5px;left:12px;width:8px;height:8px;border-radius:50%;background:var(--green)}
+.cv.a::before{background:var(--amber)}
+.cv-num{font:600 1.45rem var(--font-m);color:var(--text-3);transition:color .3s;line-height:1.1}
+.cv-name{font:500 .76rem var(--font-b);color:var(--text-3);transition:color .3s}
+.cv:hover{border-top-color:var(--line-2)}
+.cv:hover .cv-num{color:var(--text-2)}
+.cv.selected{border-top-color:var(--amber)}
+.cv.selected .cv-num{color:var(--text)}
+.cv.selected .cv-name{color:var(--text-2)}
+.compat-detail{margin-top:38px;border:1px solid var(--line);background:var(--bg-2);border-radius:14px;padding:30px 32px;min-height:168px;transition:opacity .25s,transform .25s}
+.compat-detail.swap{opacity:0;transform:translateY(8px)}
+.cd-tag{font:600 .6rem var(--font-m);letter-spacing:.2em;text-transform:uppercase;border-radius:5px;padding:5px 9px;display:inline-block;margin-bottom:14px}
+.cd-tag.g{color:var(--green);background:var(--green-soft);border:1px solid rgba(48,209,88,.3)}
+.cd-tag.a{color:var(--amber);background:var(--amber-soft);border:1px solid rgba(255,159,10,.3)}
+.compat-detail h3{font:600 1.25rem var(--font-b);letter-spacing:-.01em}
+.compat-detail p{color:var(--text-2);font-size:.93rem;max-width:72ch;margin:8px 0 16px}
+.cd-links{display:flex;gap:22px;flex-wrap:wrap}
+.cd-links a{font:600 .8rem var(--font-b);color:var(--amber);border-bottom:1px solid rgba(255,159,10,.35);padding-bottom:2px;transition:.2s}
+.cd-links a:hover{color:var(--amber-2);border-bottom-color:var(--amber-2)}
+
+/* ============ build ============ */
+.build-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start}
+.cmd-bar{display:flex;align-items:center;gap:14px;border:1px solid var(--line);background:var(--bg-2);border-radius:12px;padding:14px 16px;margin-bottom:18px}
+.cmd-bar .pr{font:600 .9rem var(--font-m);color:var(--amber)}
+.cmd-bar code{flex:1;font:400 .74rem var(--font-m);color:var(--text-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.icon-btn{flex:none;width:34px;height:34px;display:grid;place-items:center;background:transparent;border:1px solid var(--line-2);border-radius:8px;color:var(--text-2);cursor:pointer;transition:.2s}
+.icon-btn:hover{color:var(--text);border-color:rgba(255,255,255,.35)}
+.icon-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.term-body{height:322px;padding:18px 20px;font:400 .76rem/1.9 var(--font-m);color:var(--text-2);overflow-y:auto}
+.term-body .line{animation:lineIn .25s ease forwards;opacity:0;white-space:pre-wrap;word-break:break-all}
+@keyframes lineIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.t-p{color:var(--amber);font-weight:600}
+.t-ok{color:var(--green)}
+.t-dim{color:var(--text-3)}
+.term-foot{display:flex;align-items:center;gap:16px;border-top:1px solid var(--line);padding:12px 16px}
+.term-status{font:400 .68rem var(--font-m);color:var(--text-3);margin-left:auto;letter-spacing:.04em}
+.term-status.ok{color:var(--green)}
+.build-aside{display:flex;flex-direction:column;gap:18px}
+.app-shot{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg-2)}
+.app-shot .win-bar{background:rgba(255,255,255,.03)}
+.app-shot img{width:100%}
+.build-note{border:1px solid var(--line);border-radius:14px;padding:22px 24px;background:var(--bg-2)}
+.build-note b{font:600 .64rem var(--font-m);letter-spacing:.2em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:8px}
+.build-note p{color:var(--text-2);font-size:.88rem;margin-bottom:12px}
+.build-note p:last-child{margin-bottom:0}
+.build-note a{color:var(--text);border-bottom:1px solid var(--line-2);transition:.2s}
+.build-note a:hover{color:var(--amber);border-bottom-color:var(--amber)}
+
+/* ============ specs ============ */
+.specs{display:grid;grid-template-columns:1fr 1fr;column-gap:64px}
+.spec-row{display:flex;gap:18px;padding:17px 2px;border-top:1px solid var(--line);align-items:baseline}
+.spec-row:nth-child(-n+2){border-top:0}
+.spec-k{flex:none;width:118px;font:600 .64rem var(--font-m);letter-spacing:.16em;color:var(--text-3);text-transform:uppercase}
+.spec-v{font:500 .95rem var(--font-b);color:var(--text)}
+.spec-v small{display:block;font:400 .76rem var(--font-m);color:var(--text-3);margin-top:2px}
+.spec-v a{color:var(--amber);border-bottom:1px solid rgba(255,159,10,.35)}
+
+/* ============ hardware status ============ */
+.status-cols{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;align-items:start}
+.sgroup h4{font:600 .64rem var(--font-m);letter-spacing:.22em;color:var(--text-3);text-transform:uppercase;margin:30px 0 8px;display:flex;align-items:center;gap:10px}
+.sgroup h4::after{content:"";flex:1;height:1px;background:var(--line)}
+.sgroup:first-child h4{margin-top:0}
+.srow{display:flex;align-items:center;gap:14px;padding:12px 6px;border-top:1px solid var(--line);transition:background .25s}
+.srow:first-of-type{border-top:0}
+.srow:hover{background:rgba(255,255,255,.025)}
+.srow .n{font:500 .68rem var(--font-m);color:var(--text-3);width:24px;flex:none;transition:color .25s}
+.srow:hover .n{color:var(--amber)}
+.srow .nm{flex:1;font:500 .92rem var(--font-b);color:var(--text-2);transition:color .25s}
+.srow:hover .nm{color:var(--text)}
+.srow .st{display:inline-flex;align-items:center;gap:8px;font:600 .58rem var(--font-m);letter-spacing:.18em;color:var(--green)}
+.srow .st::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green)}
+
+/* ============ CTA band ============ */
+.cta{margin-top:120px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);padding:92px 0;text-align:center}
+.cta .kicker{justify-content:center}
+.cta .kicker::after{content:"";width:26px;height:1px;background:var(--amber)}
+.cta h2{font-family:var(--font-d);font-weight:600;font-size:clamp(2rem,4.6vw,3.4rem);letter-spacing:-.02em;margin:20px auto 18px;max-width:22ch;line-height:1.08}
+.cta p{color:var(--text-2);max-width:56ch;margin:0 auto 34px}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ============ footer ============ */
+footer{padding:84px 0 40px}
+.foot-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;margin-bottom:64px}
+.foot-grid h5{font:600 .64rem var(--font-m);letter-spacing:.22em;text-transform:uppercase;color:var(--text-3);margin-bottom:18px}
+.credit{display:flex;align-items:baseline;gap:16px;padding:12px 2px;border-top:1px solid var(--line);transition:.2s}
+.credit:hover{background:rgba(255,255,255,.02)}
+.credit b{font:500 .9rem var(--font-b);width:150px;flex:none}
+.credit span{flex:1;color:var(--text-3);font-size:.82rem}
+.credit a{font:500 .76rem var(--font-m);color:var(--amber)}
+.foot-g3{border:1px solid var(--line);border-radius:14px;padding:26px 28px;background:var(--bg-2)}
+.foot-g3 h6{font:600 1.05rem var(--font-b);letter-spacing:-.01em;margin-bottom:8px}
+.foot-g3 p{color:var(--text-2);font-size:.88rem;margin-bottom:18px}
+.foot-bar{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:26px;font:400 .7rem var(--font-m);color:var(--text-3);letter-spacing:.05em}
+.foot-bar a{color:var(--text-2)}
+.foot-bar a:hover{color:var(--amber)}
+
+/* ============ back to top (floating, left side) ============ */
+#toTop{
+  position:fixed;right:26px;bottom:26px;z-index:110;
+  width:54px;height:54px;border-radius:50%;
+  background:rgba(15,15,19,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border:1px solid var(--line-2);color:var(--text-2);
+  display:grid;place-items:center;cursor:pointer;
+  opacity:0;transform:translateY(18px);pointer-events:none;
+  transition:opacity .35s,transform .35s cubic-bezier(.2,.9,.3,1.2),border-color .25s,color .25s,background .25s;
+  box-shadow:0 12px 32px rgba(0,0,0,.45);
+}
+#toTop.show{opacity:1;transform:none;pointer-events:auto}
+#toTop:hover{border-color:var(--amber);color:var(--amber);background:rgba(255,159,10,.1)}
+#toTop .arrow{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
+#toTop:hover .arrow{transform:translateY(-2px)}
+#toTop .ring{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);transform:rotate(-90deg);pointer-events:none}
+#toTop .ring circle{fill:none;stroke-width:2.5}
+#toTop .ring .bar{stroke:var(--amber);stroke-linecap:round;transition:stroke-dashoffset .12s linear}
+@media (max-width:640px){#toTop{right:16px;bottom:16px;width:48px;height:48px}}
+
+/* ============ toast ============ */
+#toast{position:fixed;left:50%;bottom:32px;transform:translate(-50%,18px);opacity:0;pointer-events:none;background:#1b1b22;border:1px solid var(--line-2);color:var(--text);padding:13px 20px;border-radius:10px;font:500 .84rem var(--font-b);display:flex;gap:11px;align-items:center;transition:.4s cubic-bezier(.2,.9,.3,1.15);z-index:200;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+#toast.show{transform:translate(-50%,0);opacity:1}
+#toast svg{width:15px;height:15px;color:var(--green);flex:none}
+
+/* ============ responsive ============ */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr;gap:52px}
+  .build-grid{grid-template-columns:1fr}
+  .specs,.status-cols{grid-template-columns:1fr;column-gap:0}
+  .spec-row:nth-child(2){border-top:1px solid var(--line)}
+  .spec-row:nth-child(-n+2){border-top:1px solid var(--line)}
+  .spec-row:first-child{border-top:0}
+  .foot-grid{grid-template-columns:1fr;gap:44px}
+}
+@media (max-width:860px){
+  .nav-links{display:none}
+}
+@media (max-width:640px){
+  .container{padding:0 20px}
+  .hero{padding:132px 0 76px}
+  .meta-row{flex-wrap:wrap}
+  .meta{border-right:0;padding-right:0;margin-right:22px}
+  .tl-item{grid-template-columns:30px 1fr;row-gap:8px}
+  .tl-date{grid-column:2;text-align:left;padding:0 0 0 2px;display:flex;align-items:baseline;gap:10px}
+  .tl-rail{grid-row:1 / span 2}
+  .tl-body{grid-column:2}
+  .sec{padding-top:88px}
+  .cmd-bar code{font-size:.62rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+  .hero::before{transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <rect x="4" y="4" width="16" height="11" rx="2"/>
+        <path d="M2 19h20" stroke="#ff9f0a" stroke-width="1.9"/>
+      </svg>
+      HP·EB840<em>/G4</em>
+    </a>
+    <div class="nav-links">
+      <a href="#machine" data-sec="machine">Machine</a>
+      <a href="#changelog" data-sec="changelog">Changelog</a>
+      <a href="#compat" data-sec="compat">Compatibility</a>
+      <a href="#build" data-sec="build">Build</a>
+      <a href="#specs" data-sec="specs">Specs</a>
+      <a href="#status" data-sec="status">Status</a>
+    </div>
+    <a class="nav-cta" href="https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V1" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="kicker">Hackintosh EFI · OpenCore</p>
+      <h1>HP EliteBook<br><span class="accent">840 G4</span></h1>
+      <p class="ver-line">OpenCore EFI <span class="arr">→</span> macOS Big Sur 11 <span class="arr">→</span> macOS Tahoe 26</p>
+      <p class="sub">A refined OpenCore build for one very specific laptop — pure Objective-C tooling, from the first boot to Tahoe. Created and maintained by <strong style="color:var(--text)">chris1111</strong>.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V1" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          Download Release
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/chris1111/HP-EliteBook-840-G4" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </div>
+      <div class="meta-row">
+        <div class="meta"><b>OpenCore</b><span>1.0.7 <i>·</i> 2025-11-22</span></div>
+        <div class="meta"><b>macOS range</b><span>11 → 26</span></div>
+        <div class="meta"><b>Release</b><span>V7 <i>·</i> Objective-C</span></div>
+      </div>
+    </div>
+
+    <!-- laptop showcase -->
+    <div class="tilt">
+      <figure class="hero-shot">
+        <div class="win-bar">
+          <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
+          <span class="win-title">HP-EliteBook-840-G4 — macOS · OpenCore 1.0.7</span>
+        </div>
+        <img src="https://user-images.githubusercontent.com/6248794/180880895-2980622f-2421-4e36-a178-1fdedc10b38a.png" alt="HP EliteBook 840 G4 running macOS with OpenCore">
+      </figure>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NOTICE ================= -->
+<div class="container notice reveal">
+  <div class="notice-inner">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19L12 3z"/><path d="M12 10v4"/><path d="M12 17.2v.1"/></svg>
+    <div>
+      <b>Notice</b>
+      <p>This EFI is <strong>specially designed for the HP EliteBook 840 G4</strong>. Do not install this program on another machine — every patch, kext and ACPI table is tuned to this exact hardware.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 01 MACHINE ================= -->
+<section class="sec" id="machine">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-index">01</span>
+      <div>
+        <h2>The machine</h2>
+        <p>One laptop, fully mapped. Watch the touch screen in action below.</p>
+      </div>
+    </header>
+    <a class="media-video-lg reveal" href="https://youtu.be/jwMZei4FWgo" target="_blank" rel="noopener" aria-label="Watch the touch screen demo video">
+      <div class="vwrap">
+        <img src="https://user-images.githubusercontent.com/6248794/180882015-aa6209bd-a10d-4a1e-85cf-d9729b8e0efc.png" alt="Touch screen demo video thumbnail" loading="lazy">
+        <span class="play"><svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg></span>
+      </div>
+      <span class="media-video-label">Touch screen demo — modular image creation <i>▶ Watch on YouTube</i></span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= 02 CHANGELOG ================= -->
+<section class="sec" id="changelog">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-index">02</span>
+      <div>
+        <h2>Changelog</h2>
+        <p>From a shell-script build to pure Objective-C — the road to V7.</p>
+      </div>
+    </header>
+
+    <div class="timeline">
+      <article class="tl-item latest reveal">
+        <div class="tl-date"><span class="d">16</span><span class="m">SEPT 2026</span></div>
+        <div class="tl-rail"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>Refactored Create_App build script <span class="tl-badge">Latest</span></h3>
+          <p>The Create_App build script gets a full refactor — cleaner structure, faster iteration.</p>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <div class="tl-date"><span class="d">09</span><span class="m">SEPT 2026</span></div>
+        <div class="tl-rail"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>Pure Objective-C, no more unresponsive App</h3>
+          <p>The app is now written entirely in Objective-C — the unresponsive-window issue is gone for good.</p>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <div class="tl-date"><span class="d">27</span><span class="m">MAY 2026</span></div>
+        <div class="tl-rail"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>Fixed the temporarily unresponsive App</h3>
+          <p>Addressed the freeze that could hit the app while it was working in the background.</p>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <div class="tl-date"><span class="d">26</span><span class="m">MAY 2026</span></div>
+        <div class="tl-rail"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>Release V7 — now only Objective-C</h3>
+          <p>V7 drops everything else: the whole toolchain is Objective-C from here on.</p>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <div class="tl-date"><span class="d">25</span><span class="m">MAY 2026</span></div>
+        <div class="tl-rail"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>EFI updated for the main branch</h3>
+          <p>Main-branch EFI refreshed with the latest kexts and config refinements.</p>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <div class="tl-date"><span class="d">23</span><span class="m">MAY 2026</span></div>
+        <div class="tl-rail"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>Added a branch Xcode build for macOS Tahoe 26</h3>
+          <p>A dedicated Xcode build branch targeting macOS Tahoe 26 lands in the repository.</p>
+        </div>
+      </article>
+      <div class="tl-base reveal"><i>◆</i> Base platform — OpenCore 1.0.7 · released 2025-11-22</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 COMPATIBILITY ================= -->
+<section class="sec" id="compat">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-index">03</span>
+      <div>
+        <h2>macOS compatibility</h2>
+        <p>What the BCM94360NG Wi-Fi card needs on each release. Click a version.</p>
+      </div>
+    </header>
+
+    <div class="reveal">
+      <div class="compat-top">
+        <div class="legend">
+          <span><i class="dg"></i>BCM94360NG native</span>
+          <span><i class="da"></i>OCLP required</span>
+        </div>
+      </div>
+      <div class="compat-rail" id="compatRail">
+        <button class="cv g selected" data-v="11"><span class="cv-num">11</span><span class="cv-name">Big Sur</span></button>
+        <button class="cv g" data-v="12"><span class="cv-num">12</span><span class="cv-name">Monterey</span></button>
+        <button class="cv g" data-v="13"><span class="cv-num">13</span><span class="cv-name">Ventura</span></button>
+        <button class="cv a" data-v="14"><span class="cv-num">14</span><span class="cv-name">Sonoma</span></button>
+        <button class="cv a" data-v="15"><span class="cv-num">15</span><span class="cv-name">Sequoia</span></button>
+        <button class="cv a" data-v="26"><span class="cv-num">26</span><span class="cv-name">Tahoe</span></button>
+      </div>
+      <div class="compat-detail" id="compatDetail"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 BUILD ================= -->
+<section class="sec" id="build">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-index">04</span>
+      <div>
+        <h2>Build &amp; install</h2>
+        <p>Clone, make, done — or use the Create App to write an install USB key.</p>
+      </div>
+    </header>
+
+    <div class="build-grid">
+      <div class="reveal">
+        <div class="cmd-bar">
+          <span class="pr">$</span>
+          <code id="cloneCmd">git clone https://github.com/chris1111/HP-EliteBook-840-G4.git &amp;&amp; cd $HOME/HP-EliteBook-840-G4 &amp;&amp; make</code>
+          <button class="icon-btn" id="copyBtn" aria-label="Copy clone command" title="Copy command">
+            <svg viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          </button>
+        </div>
+        <div class="window">
+          <div class="win-bar">
+            <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
+            <span class="win-title">zsh — HP-EliteBook-840-G4</span>
+          </div>
+          <div class="term-body" id="termBody">
+            <div class="line"><span class="t-p">$</span> make</div>
+          </div>
+          <div class="term-foot">
+            <button class="btn-mini" id="makeBtn">▶ Run build</button>
+            <span class="term-status" id="termStatus">Ready — press “Run build”.</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="build-aside">
+        <figure class="app-shot reveal" style="--d:.1s">
+          <div class="win-bar">
+            <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
+            <span class="win-title">Create App — install USB &amp; OpenCore package</span>
+          </div>
+          <img src="https://github.com/user-attachments/assets/24642fdd-8f40-4723-a486-70c11d9cfdad" alt="Create App interface for building the install USB key" loading="lazy">
+        </figure>
+        <div class="build-note reveal" style="--d:.18s">
+          <b>Xcode build · Big Sur → Tahoe</b>
+          <p>Build instructions apply to macOS Big Sur through Tahoe, using the <strong style="color:var(--text)">BCM94360NG</strong> Wi-Fi card.</p>
+          <p>Before post-installing macOS Tahoe, read the <a href="https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Post-Readme.md" target="_blank" rel="noopener">Post-Install Readme ↗</a> — it matters.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 SPECS ================= -->
+<section class="sec" id="specs">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-index">05</span>
+      <div>
+        <h2>Specifications</h2>
+        <p>The exact hardware this EFI is tuned against.</p>
+      </div>
+    </header>
+    <div class="specs reveal">
+      <div class="spec-row"><span class="spec-k">CPU</span><span class="spec-v">Intel Core i7-7600U Quad-Core</span></div>
+      <div class="spec-row"><span class="spec-k">Graphics</span><span class="spec-v">Intel HD Graphics 620</span></div>
+      <div class="spec-row"><span class="spec-k">Memory</span><span class="spec-v">24 GB DDR4<small>2133 MHz</small></span></div>
+      <div class="spec-row"><span class="spec-k">Display</span><span class="spec-v">14″ Full HD LED</span></div>
+      <div class="spec-row"><span class="spec-k">Trackpad</span><span class="spec-v">SMBus Synaptics</span></div>
+      <div class="spec-row"><span class="spec-k">Wireless</span><span class="spec-v"><a href="https://www.aliexpress.com/item/32464748097.html?spm=a2g0o.order_list.order_list_main.11.16611802TVtCh4" target="_blank" rel="noopener">BCM94360NG</a> Wi-Fi + Bluetooth<small>Upgraded card for Ventura 13 · works in Sonoma 14 with the OCLP patch</small></span></div>
+      <div class="spec-row"><span class="spec-k">Ports</span><span class="spec-v">2× USB 3.0 · 1× USB Type-C · DisplayPort · SD card reader</span></div>
+      <div class="spec-row"><span class="spec-k">BIOS</span><span class="spec-v"><a href="https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Bios%20Setup.md" target="_blank" rel="noopener">P78 Ver.1.38 — setup guide</a></span></div>
+      <div class="spec-row"><span class="spec-k">Storage · macOS</span><span class="spec-v">WD Black SN750SE 500 GB<small>NVMe M.2 2280 · PCIe</small></span></div>
+      <div class="spec-row"><span class="spec-k">Storage · Win 11</span><span class="spec-v">SSD WD Green 250 GB</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 STATUS ================= -->
+<section class="sec" id="status">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-index">06</span>
+      <div>
+        <h2>Hardware status</h2>
+        <p>Every subsystem below is confirmed working on this EFI — 15 / 15 reporting green.</p>
+      </div>
+    </header>
+
+    <div class="status-cols reveal">
+      <div class="sgroup">
+        <h4>Display &amp; Graphics</h4>
+        <div class="srow"><span class="n">01</span><span class="nm">Intel HD Graphics 620 — full QE/CI</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">02</span><span class="nm">External monitor over DisplayPort</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">03</span><span class="nm">Brightness control hotkeys</span><span class="st">WORKING</span></div>
+        <h4>Power</h4>
+        <div class="srow"><span class="n">04</span><span class="nm">Sleep &amp; wake</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">05</span><span class="nm">Battery status</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">06</span><span class="nm">CPU power management</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">07</span><span class="nm">Dimmable keyboard backlight</span><span class="st">WORKING</span></div>
+        <h4>Input</h4>
+        <div class="srow"><span class="n">08</span><span class="nm">Multi-gesture trackpad — Synaptics SMBus</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">09</span><span class="nm">Touch screen</span><span class="st">WORKING</span></div>
+      </div>
+      <div class="sgroup">
+        <h4>Connectivity &amp; I/O</h4>
+        <div class="srow"><span class="n">10</span><span class="nm">Wi-Fi — AirPort (BCM94360NG)</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">11</span><span class="nm">Bluetooth</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">12</span><span class="nm">Ethernet</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">13</span><span class="nm">Audio — internal speaker &amp; headphone</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">14</span><span class="nm">USB 3.0 ×2 and USB Type-C</span><span class="st">WORKING</span></div>
+        <div class="srow"><span class="n">15</span><span class="nm">Integrated camera</span><span class="st">WORKING</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="container reveal">
+    <p class="kicker">Release V1</p>
+    <h2>Ready to boot macOS on your 840 G4?</h2>
+    <p>Grab the release, write the USB key, and follow the guides. Big Sur through Tahoe — one EFI.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V1" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        Download Release
+      </a>
+      <a class="btn btn-ghost" href="https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Post-Readme.md" target="_blank" rel="noopener">Post-Install Guide ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Bios%20Setup.md" target="_blank" rel="noopener">BIOS Setup Page ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="reveal">
+        <h5>Credits</h5>
+        <div class="credit"><b>RehabMan</b><span>Hotpatches</span><a href="https://github.com/RehabMan" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="credit"><b>acidanthera</b><span>OpenCore + kexts / plugins</span><a href="https://github.com/acidanthera" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="credit"><b>headkaze</b><span>Hackintool</span><a href="https://github.com/headkaze" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="credit"><b>alexandred</b><span>VoodooI2C</span><a href="https://github.com/alexandred" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="credit"><b>andreszerocross</b><span>VoodooRMI</span><a href="https://github.com/andreszerocross/VoodooRMI" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+      <div class="foot-g3 reveal" style="--d:.12s">
+        <h5>Looking for something else?</h5>
+        <h6>HP EliteBook 840 G3</h6>
+        <p>Owning the previous generation? There is a dedicated package for the 840 G3 as well.</p>
+        <a class="btn btn-ghost" href="https://github.com/user-attachments/files/32028284/HP.EliteBook.840.G3.zip" download>Download G3 package</a>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <span>HP-EliteBook-840-G4 · maintained by <a href="https://github.com/chris1111" target="_blank" rel="noopener">chris1111</a></span>
+      <span>OpenCore 1.0.7 · 2025-11-22 — page crafted from the project README</span>
+    </div>
+  </div>
+</footer>
+
+<!-- back to top (floating, left side, with scroll-progress ring) -->
+<button id="toTop" aria-label="Back to top" title="Back to top">
+  <svg class="ring" viewBox="0 0 54 54" aria-hidden="true">
+    <circle class="bar" id="ringBar" cx="27" cy="27" r="25"/>
+  </svg>
+  <svg class="arrow" viewBox="0 0 24 24"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+</button>
+
+<!-- toast -->
+<div id="toast" role="status">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>
+  <span id="toastMsg"></span>
+</div>
+
+<script>
+/* =====================================================
+   1 · Toast
+===================================================== */
+const toastEl = document.getElementById('toast');
+const toastMsg = document.getElementById('toastMsg');
+let toastTimer;
+function toast(msg){
+  toastMsg.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>toastEl.classList.remove('show'), 2400);
+}
+
+/* =====================================================
+   2 · Nav — blur on scroll + active section
+===================================================== */
+const nav = document.getElementById('nav');
+addEventListener('scroll', ()=> nav.classList.toggle('scrolled', scrollY > 20), {passive:true});
+
+const navLinks = [...document.querySelectorAll('.nav-links a')];
+const secObserver = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navLinks.forEach(l=>l.classList.toggle('active', l.dataset.sec === e.target.id));
+    }
+  });
+},{rootMargin:'-35% 0px -55% 0px'});
+document.querySelectorAll('section[id],header[id]').forEach(s=>{ if(s.id!=='top') secObserver.observe(s); });
+
+/* =====================================================
+   3 · Reveal on scroll
+===================================================== */
+const revealObserver = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); revealObserver.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+/* =====================================================
+   4 · Hero — cursor parallax (dot grid + laptop tilt)
+===================================================== */
+const hero = document.querySelector('.hero');
+const tilt = document.querySelector('.tilt');
+const fine = matchMedia('(pointer:fine)').matches;
+const noMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(fine && !noMotion){
+  hero.addEventListener('mousemove', e=>{
+    const r = hero.getBoundingClientRect();
+    const nx = (e.clientX - r.left)/r.width  - .5;
+    const ny = (e.clientY - r.top)/r.height - .5;
+    hero.style.setProperty('--mx', nx.toFixed(3));
+    hero.style.setProperty('--my', ny.toFixed(3));
+    tilt.style.setProperty('--ry', (nx*4).toFixed(2)+'deg');
+    tilt.style.setProperty('--rx', (-ny*4).toFixed(2)+'deg');
+  });
+  hero.addEventListener('mouseleave', ()=>{
+    hero.style.setProperty('--mx',0); hero.style.setProperty('--my',0);
+    tilt.style.setProperty('--rx','0deg'); tilt.style.setProperty('--ry','0deg');
+  });
+}
+
+/* =====================================================
+   5 · Back to top — floating left button + progress ring
+===================================================== */
+const toTop  = document.getElementById('toTop');
+const ringBar = document.getElementById('ringBar');
+const RADIUS = 25;
+const CIRC = 2 * Math.PI * RADIUS;   // ≈ 157
+ringBar.style.strokeDasharray  = CIRC;
+ringBar.style.strokeDashoffset = CIRC;
+
+addEventListener('scroll', ()=>{
+  toTop.classList.toggle('show', scrollY > 480);
+  const max = document.documentElement.scrollHeight - innerHeight;
+  const p = max > 0 ? Math.min(scrollY / max, 1) : 0;
+  ringBar.style.strokeDashoffset = CIRC * (1 - p);
+}, {passive:true});
+
+toTop.addEventListener('click', ()=>{
+  scrollTo({top:0, behavior: noMotion ? 'auto' : 'smooth'});
+});
+
+/* =====================================================
+   6 · Compatibility selector
+===================================================== */
+const COMPAT = {
+  '11': { tag:'Native', cls:'g', title:'Nothing to patch',
+    body:'The BCM94360NG card is recognised out of the box on Big Sur 11. Wi-Fi, Bluetooth and AirDrop all work natively — no OCLP, no extra steps.',
+    links:[{t:'BCM94360NG card ↗', u:'https://www.aliexpress.com/item/32464748097.html?spm=a2g0o.order_list.order_list_main.11.16611802TVtCh4'}] },
+  '12': { tag:'Native', cls:'g', title:'Nothing to patch',
+    body:'Monterey 12 keeps native Broadcom support. The BCM94360NG works the moment macOS boots — stock behaviour, zero patches.',
+    links:[{t:'BCM94360NG card ↗', u:'https://www.aliexpress.com/item/32464748097.html?spm=a2g0o.order_list.order_list_main.11.16611802TVtCh4'}] },
+  '13': { tag:'Native', cls:'g', title:'Nothing to patch',
+    body:'Ventura 13 is the last release with native Broadcom drivers. This card was upgraded specifically to stay native here and beyond.',
+    links:[{t:'BCM94360NG card ↗', u:'https://www.aliexpress.com/item/32464748097.html?spm=a2g0o.order_list.order_list_main.11.16611802TVtCh4'}] },
+  '14': { tag:'OCLP 2.4.1 required', cls:'a', title:'Patch after install',
+    body:'Sonoma 14 dropped Broadcom drivers. Install OpenCore Legacy Patcher release 2.4.1 after setup and the BCM94360NG Wi-Fi and Bluetooth come right back.',
+    links:[{t:'Download OpenCore-Patcher.pkg ↗', u:'https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.4.1/OpenCore-Patcher.pkg'}] },
+  '15': { tag:'OCLP 2.4.1 required', cls:'a', title:'Patch after install',
+    body:'Same story on Sequoia 15 — use OCLP release 2.4.1 post-install to restore Broadcom Wi-Fi and Bluetooth.',
+    links:[{t:'Download OpenCore-Patcher.pkg ↗', u:'https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.4.1/OpenCore-Patcher.pkg'}] },
+  '26': { tag:'OCLP 3.0.0 patchset', cls:'a', title:'Tahoe needs the new patchset',
+    body:'On macOS Tahoe 26, use the OCLP 3.0.0 patchset to bring Broadcom Wi-Fi back to life. Then read the Post-Install guide before finishing setup.',
+    links:[
+      {t:'Download patchset ↗', u:'https://github.com/chris1111/HP-EliteBook-840-G4/releases/download/PatchSet/OpenCore-Patcher.pkg.zip'},
+      {t:'Post-Install guide ↗', u:'https://github.com/chris1111/HP-EliteBook-840-G4/blob/main/Post-Readme.md'}
+    ] }
+};
+const rail = document.getElementById('compatRail');
+const detail = document.getElementById('compatDetail');
+
+function renderCompat(v){
+  const d = COMPAT[v];
+  detail.innerHTML = `
+    <span class="cd-tag ${d.cls}">${d.tag}</span>
+    <h3>${d.title}</h3>
+    <p>${d.body}</p>
+    <div class="cd-links">${d.links.map(l=>`<a href="${l.u}" target="_blank" rel="noopener">${l.t}</a>`).join('')}</div>`;
+}
+rail.addEventListener('click', e=>{
+  const btn = e.target.closest('.cv');
+  if(!btn || btn.classList.contains('selected')) return;
+  rail.querySelectorAll('.cv').forEach(c=>c.classList.remove('selected'));
+  btn.classList.add('selected');
+  detail.classList.add('swap');
+  setTimeout(()=>{ renderCompat(btn.dataset.v); detail.classList.remove('swap'); }, 220);
+});
+renderCompat('11');
+
+/* =====================================================
+   7 · Terminal build simulation
+===================================================== */
+const termBody   = document.getElementById('termBody');
+const termStatus = document.getElementById('termStatus');
+const makeBtn    = document.getElementById('makeBtn');
+let building = false;
+
+const MAKE_LINES = [
+  ['dim','→ HP-EliteBook-840-G4 · build script'],
+  ['dim','→ target: Create_App (Objective-C)'],
+  ['dim','→ checking Xcode toolchain … ok'],
+  ['','clang -ObjC -framework Foundation -framework AppKit \\'],
+  ['','&nbsp;&nbsp;Create_App.m -o Create_App'],
+  ['dim','→ compiling Create_App.m'],
+  ['dim','→ linking Foundation · AppKit'],
+  ['ok','✓ build complete → dist/Create_App.app']
+];
+
+makeBtn.addEventListener('click', ()=>{
+  if(building) return;
+  building = true;
+  makeBtn.textContent = 'Building…';
+  makeBtn.style.opacity = .5;
+  termStatus.textContent = 'make — running…';
+  termStatus.classList.remove('ok');
+  const startLine = document.createElement('div');
+  startLine.className = 'line';
+  startLine.innerHTML = '<span class="t-p">$</span> make';
+  termBody.appendChild(startLine);
+
+  MAKE_LINES.forEach((l,i)=>{
+    setTimeout(()=>{
+      const div = document.createElement('div');
+      div.className = 'line' + (l[0] ? ' t-'+l[0] : '');
+      div.innerHTML = l[1];
+      termBody.appendChild(div);
+      termBody.scrollTop = termBody.scrollHeight;
+      if(i === MAKE_LINES.length-1){
+        termStatus.textContent = 'Done — app ready in dist/.';
+        termStatus.classList.add('ok');
+        makeBtn.textContent = '↻ Rebuild';
+        makeBtn.style.opacity = 1;
+        building = false;
+        toast('Build finished — dist/Create_App.app');
+      }
+    }, 420 + i*340);
+  });
+});
+
+/* =====================================================
+   8 · Copy command
+===================================================== */
+document.getElementById('copyBtn').addEventListener('click', async ()=>{
+  const cmd = 'git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make';
+  try{
+    await navigator.clipboard.writeText(cmd);
+  }catch(_){
+    const ta = document.createElement('textarea');
+    ta.value = cmd; document.body.appendChild(ta);
+    ta.select(); document.execCommand('copy'); ta.remove();
+  }
+  toast('Clone command copied to clipboard');
+});
+</script>
+</body>
+</html>
