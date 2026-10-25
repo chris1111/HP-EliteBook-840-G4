@@ -24,7 +24,7 @@
 <img width="477" height="388" alt="Screenshot" src="https://github.com/user-attachments/assets/24642fdd-8f40-4723-a486-70c11d9cfdad" />
 
 #### Xcode Build Project: Install Instructions: ⬇︎ For macOS Tahoe using BCM94360NG Wifi card
-- This branch is for Tahoe 26.7.1x Without Patcher ZIP fully enable.
+- This branch is for Tahoe 26.7.1x Without Patcher SIP fully enable.
 
 - #### Clone the repository and Build
 ```bash
