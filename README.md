@@ -1,7 +1,8 @@
 # HP-EliteBook-840-G4
 - OpenCore / macOS Big Sur 11 to / macOS Tahoe 26
 
-### Latest Update 16 Sept 2026 Refractor Create_App build script
+### Latest Update 25 Oct 2026 Add Tahoe branch
+- Update 16 Sept 2026 Refractor Create_App build script
 - Update 09 Sept 2026 Pure Objective-C code no more unresponsive App
 - Update 27 May 2026 Fix the temporarily unresponsive App
 - Update 26 May 2026 Release V7 is now only Objective-C
@@ -22,6 +23,15 @@
 
 <img width="477" height="388" alt="Screenshot" src="https://github.com/user-attachments/assets/24642fdd-8f40-4723-a486-70c11d9cfdad" />
 
+#### Xcode Build Project: Install Instructions: ⬇︎ For macOS Tahoe using BCM94360NG Wifi card
+- This branch is for Tahoe 26.7.1x Without Patcher ZIP fully enable.
+
+- #### Clone the repository and Build
+```bash
+git clone --branch Tahoe https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-EliteBook-840-G4 && make
+```
+
+--------------------------------------------------
 
 #### Xcode Build Project: Install Instructions: ⬇︎ For macOS Big Sur to macOS Tahoe using BCM94360NG Wifi card
 - For Tahoe 26 use Release OCLP 3.0.0 to make Broadcom Wifi working. [OCLP-tahoe-patchset 3.0.0](https://github.com/chris1111/HP-EliteBook-840-G4/releases/download/PatchSet/OpenCore-Patcher.pkg.zip) 
