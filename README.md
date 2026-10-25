@@ -12,6 +12,8 @@
   
 ### Download Release ➤ [HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/V1)
 
+### Download Release ➤ [HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4/releases/tag/Tahoe-NoPatcher) For Tahoe 26.7.1x without patcher using BCM94360NG Wifi card
+
 ## This program is specially designed for the HP EliteBook 840 G4! Do not install this program on another machine.
 
 ![HP EliteBook 840 G4](https://user-images.githubusercontent.com/6248794/180880895-2980622f-2421-4e36-a178-1fdedc10b38a.png)
