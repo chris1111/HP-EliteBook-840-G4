@@ -91,5 +91,6 @@ git clone https://github.com/chris1111/HP-EliteBook-840-G4.git && cd $HOME/HP-El
 - [headkaze](https://github.com/headkaze) Hackintool
 - [alexandred](https://github.com/alexandred) VoodooI2C
 - [andreszerocross](https://github.com/andreszerocross/VoodooRMI) VoodooRMI
+- [laobamac](https://github.com/laobamac) SimpleBCM, SimpleHDA
 
 Looking for ➦ [HP EliteBook 840 G3.zip](https://github.com/user-attachments/files/32028284/HP.EliteBook.840.G3.zip)
