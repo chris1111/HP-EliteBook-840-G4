@@ -57,7 +57,7 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>26.0</string>
+	<string>15.0</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2026 laobamac. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
